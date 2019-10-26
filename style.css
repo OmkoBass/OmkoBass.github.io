@@ -1,0 +1,112 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+nav
+{
+    display: flex;
+    justify-content: space-around;
+    background: #202040;
+    color: white;
+}
+.logo
+{
+    margin: 15px;
+    letter-spacing: 12px;
+    font-weight: bold;
+}
+.menu ul
+{
+    display:flex;
+}
+.menu a
+{
+    margin: 15px;
+    color: white;
+    text-decoration: none;
+}
+.menu li
+{
+    list-style: none;
+    margin: 15px;
+}
+.logo h1:hover
+{
+    background: black;
+    transition: 0.5s ease-in;
+}
+.menu li:hover
+{
+    background: black;
+    transition: 0.5s ease-in;
+    font-size: 20px;
+}
+.middle
+{
+    background-image: url(Circuit.jpg);
+    background-position: center;
+    padding: 250px;
+}
+.middle h1
+{
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-align: center;
+    font-size: 25px;
+}
+.electircal
+{
+    background:#202040;
+    padding: 100px;
+    color:white;
+}
+.electircal h1
+{
+    text-decoration: underline;
+}
+.programming
+{
+    padding: 80px;
+    background:#602080;
+    color:white;
+    text-align: right;;
+}
+.programming h1
+{
+    text-decoration: underline;
+}
+.mechanical
+{
+    padding: 80px;
+    background:#b030b0;
+    color:white;
+}
+.mechanical h1
+{
+    text-decoration: underline;
+}
+.contact
+{
+    color: white;
+    background: #202040;
+    align-content: center;
+    display:flex;
+    flex-direction: column;
+}
+.contact p, input
+{
+    text-align: center;
+}
+.hed
+{
+    text-align: center;
+}
+footer
+{
+    color:white;
+    background: #202040;
+    padding: 25px;
+    text-align: center;
+}

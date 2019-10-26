@@ -1,0 +1,90 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 26px;
+    background: #202040;
+}
+.home
+{
+    letter-spacing: 12px;
+}
+nav a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+}
+nav a:hover
+{
+    transition: 0.5s ease-in;
+    font-size: 30px;
+}
+.middle
+{
+    padding: 250px;
+    text-align: center;
+    color:white;
+    background-image: url(Images/Network.jpg);
+    background-position: bottom left;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.about
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #202040;
+    color: white;
+}
+.title
+{
+    margin: 16px;
+    text-align: center;
+}
+.about p
+{
+    margin: 16px;
+    text-align: center;
+}
+.about img
+{
+    flex-direction: row;
+    margin: 16px;
+}
+.physics h1
+{
+    text-align: center;
+    padding: 100px;
+    background-image: url(Images/Physics.jpg);
+    background-position: center;
+    opacity: 0.8;
+}
+.math h1
+{
+    text-align: center;
+    padding: 100px;
+    background-image: url(Images/Math.jpg);
+    background-position: center;
+    opacity: 0.8;
+}
+.programming h1
+{
+    text-align: center;
+    padding: 100px;
+    background-image: url(Images/Programming.jpg);
+    background-position: center;
+    opacity: 0.8;
+}
+footer
+{
+    background-color:black;
+    color:white;
+    text-align: center;
+    padding: 25px;
+}

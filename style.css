@@ -32,20 +32,14 @@ nav
     list-style: none;
     margin: 15px;
 }
-.logo h1:hover
-{
-    background: black;
-    transition: 0.5s ease-in;
-}
 .menu li:hover
 {
-    background: black;
     transition: 0.5s ease-in;
     font-size: 20px;
 }
 .middle
 {
-    background-image: url(Circuit.jpg);
+    background-image: url(Images/Network.jpg);
     background-position: center;
     padding: 250px;
 }
@@ -106,7 +100,7 @@ nav
 footer
 {
     color:white;
-    background: #202040;
+    background: black;
     padding: 25px;
     text-align: center;
 }

@@ -8,7 +8,7 @@ nav
 {
     display: flex;
     justify-content: space-around;
-    padding: 18px;
+    padding: 16px;
     background: #202040;
 }
 .home
@@ -16,20 +16,17 @@ nav
     letter-spacing: 10px;
     font-weight: bold;
 }
-.menu
-{
-    margin-right: 10%;
-}
 nav a
 {
     color: white;
     text-decoration: none;
     font-size: 22px;
+    font-weight: normal;
 }
 nav a:hover
 {
     transition: 0.5s ease-in;
-    font-size: 30px;
+    font-size: 26px;
 }
 .middle
 {

@@ -7,13 +7,18 @@
 nav
 {
     display: flex;
-    justify-content: space-between;
-    padding: 26px;
+    justify-content: space-around;
+    padding: 18px;
     background: #202040;
 }
 .home
 {
-    letter-spacing: 12px;
+    letter-spacing: 10px;
+    font-weight: bold;
+}
+.menu
+{
+    margin-right: 10%;
 }
 nav a
 {

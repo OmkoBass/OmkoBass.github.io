@@ -59,29 +59,60 @@ nav a:hover
     flex-direction: row;
     margin: 16px;
 }
-.physics h1
+.math
 {
-    text-align: center;
-    padding: 100px;
-    background-image: url(Images/Physics.jpg);
+    background-image: url(Images/Math.jpg);
     background-position: center;
-    opacity: 0.8;
+    text-align: left;
+    display:flex;
 }
 .math h1
 {
-    text-align: center;
-    padding: 100px;
-    background-image: url(Images/Math.jpg);
-    background-position: center;
+    margin-top: 15px;
+    padding: 50px;
     opacity: 0.8;
+}
+.math p
+{
+    font-size: 20px;
+    padding: 24px;
+}
+.physics
+{
+    background-image: url(Images/Physics.jpg);
+    background-position: center;
+    text-align: right;
+    display: flex;
+}
+.physics h1
+{
+    margin-top: 30px;
+    padding: 50px;
+    opacity: 0.8;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.physics p
+{
+    font-size: 20px;
+    padding: 24px;
+}
+.programming
+{
+    background-image: url(Images/Programming.jpg);
+    background-position: center;
+    text-align: left;
+    display: flex;
 }
 .programming h1
 {
-    text-align: center;
-    padding: 100px;
-    background-image: url(Images/Programming.jpg);
-    background-position: center;
+    margin-top: 35px;
+    padding: 50px;
     opacity: 0.8;
+}
+.programming p
+{
+    font-size: 20px;
+    padding: 24px;
 }
 footer
 {

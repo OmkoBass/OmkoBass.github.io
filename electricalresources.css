@@ -1,0 +1,67 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+nav
+{
+    padding: 16px;
+    background:black;
+    font-weight: bold;
+}
+nav a
+{
+    color: white;
+    text-decoration: none;
+    margin-left: 15%;
+    letter-spacing: 5px;
+    font-size: 22px;
+    font-weight: bold;
+}
+nav a:hover
+{
+    transition: 0.5s ease-in;
+    font-size: 26px;
+}
+.books
+{
+    background: #202040;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+    text-align: center;
+}
+.books img
+{
+    width: 60%;
+}
+.books p
+{
+    color: white;
+}
+.book1 p
+{
+    padding: 25px;
+    font-size: 25px;
+    text-decoration: underline;
+}
+.book2 p
+{
+    padding: 25px;
+    font-size: 25px;
+    text-decoration: underline;
+}
+.book3 p
+{
+    padding: 25px;
+    font-size: 25px;
+    text-decoration: underline;
+}
+footer
+{
+    color:white;
+    background: black;
+    padding: 25px;
+    text-align: center;
+}

@@ -61,7 +61,7 @@ nav a:hover
 }
 .math
 {
-    background-image: url(Images/Math.jpg);
+    background-image: url(Images/Electrical/Math.jpg);
     background-position: center;
     text-align: left;
     display:flex;
@@ -78,7 +78,7 @@ nav a:hover
 }
 .physics
 {
-    background-image: url(Images/Physics.jpg);
+    background-image: url(Images/Electrical/Physics.jpg);
     background-position: center;
     text-align: right;
     display: flex;
@@ -96,7 +96,7 @@ nav a:hover
 }
 .programming
 {
-    background-image: url(Images/Programming.jpg);
+    background-image: url(Images/Electrical/Programming.jpg);
     background-position: center;
     text-align: left;
     display: flex;

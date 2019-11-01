@@ -4,48 +4,74 @@
         <title>SCI-ENC-IT</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> 
     </head>
     <body>
-        <nav>
-            <div class="logo">
-                <h1>SCI-ENC-IT</h1>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="electrical.html">Electrical Engineering</a></li>
-                    <li><a href="#">Programming</a></li>
-                    <li><a href="#">Mechanical Engineering</a></li>
-                </ul>
-            </div>
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <h1 class="navbar-brand" style="font-size: 32px;">SCI-ENC-IT</h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="electrical.html">Electrical Engineering</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Programming</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Mechanical Engineering</a>
+                      </li>
+                    </ul>
+                </div>
         </nav>
-        <div class="middle">
-            <h1>Everything about the most important branches of science</h1>
+        <div class="jumbotron jubmotron-fluid middle" style="margin-bottom: 0%;">
+            <div class="container-fluid">
+                <h1>The most important branches of science</h1>
+            </div>
         </div>
-        <div class="electircal">
-            <h1>Smart</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ratione deleniti aspernatur repudiandae pariatur quam doloremque praesentium est delectus magnam autem voluptas vero porro perspiciatis maiores obcaecati, rem consequuntur officia.</p>
+        <div class="jumbotron jumbotron-fluid electircal test" style="background-color:#202040; margin-bottom: 0%;">
+            <div class="container">
+                <h1>Smart</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo unde nesciunt, at adipisci deleniti quae aliquid molestias ipsa velit rerum. Deserunt quasi commodi officiis quod nam quos numquam, saepe suscipit?</p>
+            </div>
         </div>
-        <div class="programming">
-            <h1>Efficient</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia deleniti ipsum impedit corporis temporibus adipisci enim ad, dolores quisquam, reprehenderit debitis distinctio nihil ea. Quisquam in asperiores dolorem ullam rerum.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ullam fuga excepturi id voluptatibus, praesentium alias natus at velit rerum eius magnam corporis, quos, voluptas eaque sunt odit omnis eligendi!</p>
+        <div class="jumbotron jumbotron-fluid programming" style="background-color:#602080; margin-bottom: 0%;">
+            <div class="container">
+                <h1>Efficient</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo unde nesciunt, at adipisci deleniti quae aliquid molestias ipsa velit rerum. Deserunt quasi commodi officiis quod nam quos numquam, saepe suscipit?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ducimus vitae deserunt neque nam blanditiis praesentium reprehenderit quibusdam nemo dolorum aut eveniet soluta earum eos ipsa corrupti, ad quod molestiae.</p>
+            </div>
         </div>
-        <div class="mechanical">
-            <h1>Useful</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum assumenda aliquid debitis corrupti quasi voluptatum iure consequuntur saepe adipisci nam dolores nisi recusandae officiis eligendi nulla obcaecati, molestias repellat. Ducimus.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sed officiis exercitationem accusantium commodi nihil, veniam, porro libero possimus consequatur eos nulla iste provident nisi ipsum eum repellendus. Sapiente, facere!</p>
+        <div class="jumbotron jumbotron-fluid mechanical" style="background-color:#b030b0; margin-bottom: 0%;">
+            <div class="container">
+                <h1>Useful</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ducimus vitae deserunt neque nam blanditiis praesentium reprehenderit quibusdam nemo dolorum aut eveniet soluta earum eos ipsa corrupti, ad quod molestiae.</p>
+            </div>
         </div>
-        <div class="contact">
-            <span class="hed"><h1>Contact Us!</h1></span>
-            <p>E-Mail</p>
-            <input type="text" id="email" placeholder="Your e-mail here!" style="width: 25%; margin-left: 37.5%;">
-            <p>Message</p>
-            <input type="text" id="message" placeholder="Your message here!" style="height: 100px; width: 50%; margin-left: 25%;">
-            <input type="button" value="Send!" style="background-color: #202040; color:white; width:10%; margin-left: 45%; margin-top: 16px; margin-bottom: 16px;">
+        <div class="row contact">
+            <div class="col-12" style="text-align: center; margin: 16px 0px 16px 0px;"><h1>Contact Us!</h1></div>
+            <div class="col-12"><p>Your Email</p></div>
+            <div class="col-12"> <input type="email" class="form-control" id="email"></div>
+            <div class="col-12" style="margin: 16px 0px 0px 0px;"><p>Your Message</p></div>
+            <div class="col-12"> <input style="height: 120px;" class="form-control" id="messagebox" required></div>
+            <div class="col-12" style="text-align: center; margin: 16px 0px 0px 0px;"><button class="btn" style="background-color: black; color:white" onclick="validate()"> Send! </button></div>
+            <div class="col-12">
+                <div class="alert alert-success" style="height: 0; margin: 16px 0px 0px 0px; opacity: 0;" id="alertsuccess">
+                    <h3 id="messagesuccess" style="text-align: center;">Success</h3>
+                </div>
+                <div class="alert alert-danger" style="height: 0; margin: 16px 0px 0px 0px; opacity: 0;" id="alertdanger">
+                    <h3 id="messagedanger" style="text-align: center;">Please enter a valid message!</h3>
+                </div>
+            </div>
         </div>
         <footer>
             <p>Copyright @JebemTiNanu.com</p>
         </footer>
+        <script type="text/javascript" src="app.js"></script>
+        <script type="text/javascript" src="bootstrap/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
     </body>
 </html>

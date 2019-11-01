@@ -1,7 +1,5 @@
 *
 {
-    padding: 0px;
-    margin: 0px;
     font-family: 'Poppins', sans-serif;
 }
 nav
@@ -11,48 +9,25 @@ nav
     background: #202040;
     color: white;
 }
-.logo
+.navbar-nav
 {
-    margin: 15px;
-    letter-spacing: 12px;
-    font-weight: bold;
-}
-.menu ul
-{
-    display:flex;
-}
-.menu a
-{
-    margin: 15px;
-    color: white;
-    text-decoration: none;
-}
-.menu li
-{
-    list-style: none;
-    margin: 15px;
-}
-.menu li:hover
-{
-    transition: 0.5s ease-in;
-    font-size: 20px;
+    justify-content: space-around;
+    flex-basis: 160%;
 }
 .middle
 {
-    background-image: url(Images/Network.jpg);
-    background-position: center;
-    padding: 250px;
+    background: url(Images/Circuit.jpg); 
+    background-position: center; 
+    color:white; 
+    text-align: center; 
+    text-shadow: 4px 4px 4px black;
 }
 .middle h1
 {
-    color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    text-align: center;
-    font-size: 25px;
+    padding: 200px; 
 }
 .electircal
 {
-    background:#202040;
     padding: 100px;
     color:white;
 }
@@ -65,7 +40,7 @@ nav
     padding: 80px;
     background:#602080;
     color:white;
-    text-align: right;;
+    text-align: right;
 }
 .programming h1
 {
@@ -85,15 +60,9 @@ nav
 {
     color: white;
     background: #202040;
-    align-content: center;
-    display:flex;
-    flex-direction: column;
+    padding: 26px;
 }
 .contact p, input
-{
-    text-align: center;
-}
-.hed
 {
     text-align: center;
 }

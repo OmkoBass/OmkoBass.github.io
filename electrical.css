@@ -6,27 +6,18 @@
 }
 nav
 {
-    display: flex;
-    justify-content: space-around;
-    padding: 16px;
     background: #202040;
-}
-.home
-{
-    letter-spacing: 10px;
-    font-weight: bold;
-}
-nav a
-{
-    color: white;
-    text-decoration: none;
-    font-size: 22px;
-    font-weight: normal;
 }
 nav a:hover
 {
-    transition: 0.5s ease-in;
-    font-size: 26px;
+    font-size: 22px;
+    transition: all 0.3s ease-in-out;
+}
+.navbar-nav
+{
+    font-size: 16px;
+    justify-content: space-around;
+    flex-basis: 160%;
 }
 .middle
 {
@@ -34,8 +25,17 @@ nav a:hover
     text-align: center;
     color:white;
     background-image: url(Images/Network.jpg);
-    background-position: bottom left;
+    background-position: center;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.toknow
+{
+    color: white;
+    text-align: center;
+}
+.toknow h1
+{
+    padding: 32px;
 }
 .about
 {
@@ -61,14 +61,14 @@ nav a:hover
 }
 .math
 {
+    color: white;
     background-image: url(Images/Electrical/Math.jpg);
     background-position: center;
     text-align: left;
-    display:flex;
 }
 .math h1
 {
-    padding: 50px;
+    padding: 16px;
     opacity: 0.8;
 }
 .math p
@@ -81,13 +81,12 @@ nav a:hover
     background-image: url(Images/Electrical/Physics.jpg);
     background-position: center;
     text-align: right;
-    display: flex;
+    color: white;
 }
 .physics h1
 {
-    padding: 50px;
+    padding: 16px;
     opacity: 0.8;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .physics p
 {
@@ -98,12 +97,13 @@ nav a:hover
 {
     background-image: url(Images/Electrical/Programming.jpg);
     background-position: center;
+    color: white;
     text-align: left;
-    display: flex;
+
 }
 .programming h1
 {
-    padding: 50px;
+    padding: 16px;
     opacity: 0.8;
 }
 .programming p

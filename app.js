@@ -10,6 +10,8 @@ function validate()
         danger.style.opacity = "0";
         success.style.height = "60px";
         danger.style.height = "0px";
+        document.getElementById("messagebox").value = "";
+        document.getElementById("email").value = "";
     }
     else
     {

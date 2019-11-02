@@ -4,7 +4,7 @@
 }
 nav
 {
-    background: #202040;
+    background: linear-gradient(to bottom, #202040 ,black)
 }
 nav a:hover
 {
@@ -31,6 +31,7 @@ nav a:hover
 }
 .electircal
 {
+    background: linear-gradient(to top, #202040 ,black);
     padding: 100px;
     color:white;
 }

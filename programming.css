@@ -7,7 +7,6 @@
 nav
 {
     background: linear-gradient(180deg, #602080, black);
-    background-color:#602080;
 }
 nav a:hover
 {
@@ -35,7 +34,6 @@ nav a:hover
 .toknow
 {
     background: linear-gradient(to top, #602080, black);
-    background-color: #602080;
     color: white;
     text-align: center;
 }

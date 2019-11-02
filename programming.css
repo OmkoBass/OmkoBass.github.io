@@ -1,0 +1,61 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+nav
+{
+    background: linear-gradient(180deg, #602080, black);
+    background-color:#602080;
+}
+nav a:hover
+{
+    font-size: 22px;
+    transition: all 0.3s ease-in-out;
+}
+.navbar-nav
+{
+    font-size: 16px;
+    justify-content: space-around;
+    flex-basis: 160%;
+}
+.middle
+{
+    text-align: center;
+    color:white;
+    background-image: url(Images/Programming/background.webp);
+    background-position: bottom;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.middle h1
+{
+    padding: 120px;
+}
+.toknow
+{
+    background: linear-gradient(to top, #602080, black);
+    background-color: #602080;
+    color: white;
+    text-align: center;
+}
+.thinking
+{
+    color: white;
+    background-image: url(Images/Programming/think.png);
+    background-position-x: 600px;
+    background-position-y: 660px;
+    text-align: left;
+}
+.thinking h1
+{
+    padding: 16px;
+    opacity: 0.8;
+}
+footer
+{
+    color:white;
+    background: black;
+    padding: 25px;
+    text-align: center;
+}

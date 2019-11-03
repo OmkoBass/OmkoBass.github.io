@@ -31,7 +31,6 @@ nav a:hover
 }
 .electircal
 {
-    background: linear-gradient(to top, #202040 ,black);
     padding: 100px;
     color:white;
 }
@@ -42,7 +41,6 @@ nav a:hover
 .programming
 {
     padding: 80px;
-    background:#602080;
     color:white;
     text-align: right;
 }
@@ -52,8 +50,6 @@ nav a:hover
 }
 .mechanical
 {
-    padding: 80px;
-    background:#b030b0;
     color:white;
 }
 .mechanical h1
@@ -63,7 +59,7 @@ nav a:hover
 .contact
 {
     color: white;
-    background: #202040;
+    background: #302040;
     padding: 26px;
 }
 .contact p, input

@@ -6,7 +6,7 @@
 }
 nav
 {
-    background: linear-gradient(180deg, #602080, black);
+    background: linear-gradient(180deg, #203040, black);
 }
 nav a:hover
 {
@@ -33,16 +33,14 @@ nav a:hover
 }
 .toknow
 {
-    background: linear-gradient(to top, #602080, black);
+    background: linear-gradient(to top, #203040, black);
     color: white;
     text-align: center;
 }
 .thinking
 {
     color: white;
-    background-image: url(Images/Programming/think.png);
-    background-position-x: 600px;
-    background-position-y: 660px;
+    background-position: center;
     text-align: left;
 }
 .thinking h1

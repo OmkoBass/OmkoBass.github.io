@@ -37,9 +37,19 @@ nav a:hover
     color: white;
     text-align: center;
 }
+.typing
+{
+    background-color: #203040;
+    color: white;
+}
+.typing p
+{
+    padding: 16px;
+}
 .thinking
 {
     color: white;
+    background: url(Images/Programming/brain.jpg);
     background-position: center;
     text-align: left;
 }

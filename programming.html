@@ -5,6 +5,8 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="programming.css">
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="libraries/codemirror-5.49.2/lib/codemirror.css">
+        <link rel="stylesheet" href="libraries/codemirror-5.49.2/theme/dracula.css">
         <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> 
     </head>
     <body>
@@ -36,7 +38,39 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo unde nesciunt, at adipisci deleniti quae aliquid molestias ipsa velit rerum. Deserunt quasi commodi officiis quod nam quos numquam, saepe suscipit?</p>
             </div>
         </div>
-        <div class="jumbotron jumbotron-fluid thinking" style="margin-bottom: 0%;">
+        <div class="editor">
+            <h1>You can look cool and smart while doing it!</h1>
+            <textarea id="textarea">
+        import turtle
+        import math
+        import colorsys
+            
+        phi = 180 * (3 - math.sqrt(5))
+            
+        t = turtle.Pen()
+        t.speed(0)
+            
+        def square(t, size):
+            for tmp in range(0,4):
+                t.forward(size)
+                t.right(90)
+            
+            
+        num = 200
+            
+        for x in reversed(range(0, num)):
+            t.fillcolor(colorsys.hsv_to_rgb(x/num, 1.0, 1.0))
+            t.begin_fill()
+            t.circle(5 + x, None, 11)
+            square(t, 5 + x)
+            t.end_fill()
+            t.right(phi)
+            t.right(.8)
+            
+        turtle.mainloop()
+            </textarea>
+        </div>
+        <div class="jumbotron jumbotron-fluid thinking" style="margin-bottom: 0%; background-color: #203040; ">
             <div class="container">
                 <h1 style="text-align: right;">Thinking</h1>
                 <p style="text-align: right;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur adipisci delectus debitis voluptatibus sunt animi, illum vitae perspiciatis esse consequatur, nostrum cupiditate aut eos nihil. Ratione similique laborum sed minima.</p>
@@ -47,5 +81,8 @@
         </footer>
         <script src="bootstrap/jquery-3.4.1.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="libraries/codemirror-5.49.2/lib/codemirror.js"></script>
+        <script src="libraries/codemirror-5.49.2/mode/python/python.js"></script>
+        <script src="programming.js"></script>
     </body>
 </html>

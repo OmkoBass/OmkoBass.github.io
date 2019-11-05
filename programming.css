@@ -37,20 +37,24 @@ nav a:hover
     color: white;
     text-align: center;
 }
-.typing
+.editor
 {
     background-color: #203040;
-    color: white;
 }
-.typing p
+.editor h1
 {
+    color:white;
     padding: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+.CodeMirror
+{
+    margin-left: 20%;
 }
 .thinking
 {
     color: white;
-    background: url(Images/Programming/brain.jpg);
-    background-position: center;
     text-align: left;
 }
 .thinking h1

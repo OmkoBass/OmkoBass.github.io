@@ -31,6 +31,7 @@ function validate()
         danger.style.height = "0px";
         document.getElementById("messagebox").value = "";
         document.getElementById("email").value = "";
+        textarea.style.border = "1px solid green";
         fadeout("alertsuccess");
     }
     else
@@ -39,6 +40,22 @@ function validate()
         danger.style.opacity = "1";
         danger.style.height = "60px";
         success.style.height = "0px";
+        textarea.style.border = "1px solid red";
         fadeout("alertdanger");
     }
 }
+
+function alignleft()
+{
+    textarea.style.textAlign = "left";
+}
+
+function aligncenter()
+{
+    textarea.style.textAlign = "center";
+}
+
+let textarea = document.getElementById("messagebox");
+textarea.addEventListener('focus', alignleft);
+textarea.addEventListener('focusout', aligncenter);
+

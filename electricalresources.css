@@ -6,29 +6,22 @@
 }
 nav
 {
-    padding: 16px;
-    background:black;
-    font-weight: bold;
+    background: linear-gradient(to top,#202040, black);
 }
-nav a
+li a:hover
 {
-    color: white;
-    text-decoration: none;
-    margin-left: 15%;
-    letter-spacing: 5px;
+    font-size: 28px;
+    transition: all 0.3s ease-in-out;
+}
+.navbar-nav
+{
     font-size: 22px;
-    font-weight: bold;
-}
-nav a:hover
-{
-    transition: 0.5s ease-in;
-    font-size: 26px;
+    justify-content: right;
+    flex-basis: 100%;
 }
 .books
 {
     background: #202040;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     padding: 50px;
     text-align: center;
 }

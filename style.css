@@ -73,10 +73,34 @@ footer
     padding: 25px;
     text-align: center;
 }
-@media only screen and (max-width: 375px) 
+@media only screen and (max-width: 415px) 
 {
     .middle h1
     {
-        padding: 80px;
+        padding: 70px;
+    }
+    .electircal h1
+    {
+        text-align: center;
+    }
+    .electircal p
+    {
+        text-align: center;
+    }
+    .programming h1
+    {
+        text-align: center;
+    }
+    .programming p
+    {
+        text-align: center;
+    }
+    .mechanical h1
+    {
+        text-align: center;
+    }
+    .mechanical p
+    {
+        text-align: center;
     }
 }  

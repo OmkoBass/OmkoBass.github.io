@@ -115,12 +115,33 @@ nav a:hover
     font-size: 20px;
     padding: 24px;
 }
+.mastermind
+{
+    text-align:  center;
+    color:white;
+}
+.mastermind
+{
+    letter-spacing: 12px;
+}
+.tesla
+{
+    background: black;
+}
+.particles-js
+{
+    height: 600px;
+}
 footer
 {
     background-color:black;
     color:white;
     text-align: center;
     padding: 25px;
+}
+footer p
+{
+    margin-top: 3%;
 }
 @media only screen and (max-width: 415px) 
 {

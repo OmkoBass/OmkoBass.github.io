@@ -55,12 +55,42 @@ li a:hover
 .thinking
 {
     color: white;
-    text-align: left;
+    text-align: center;
 }
 .thinking h1
 {
+    font-weight: bold;
     padding: 16px;
     opacity: 0.8;
+}
+.pointers
+{
+    color: white;
+    text-align: center;
+    background: linear-gradient(to top, black, #203040);
+}
+.pointers h1
+{
+    font-weight: bold;
+    padding: 16px;
+}
+.charvar
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+.ritchie
+{
+    margin-left: 10%;
+}
+.linus
+{
+    margin-right: 10%;
+}
+.linus img
+{
+    height: 105%;
 }
 footer
 {
@@ -69,7 +99,7 @@ footer
     padding: 25px;
     text-align: center;
 }
-@media only screen and (max-width: 375px) 
+@media only screen and (max-width: 415px) 
 {
     .middle h1
     {
@@ -79,5 +109,17 @@ footer
     {
         font-size: 12px;
         text-align: left;
+    }
+    .charvar
+    {
+        flex-direction: column;
+    }
+    .ritchie
+    {
+        margin: 15%;
+    }
+    .linus
+    {
+        margin: 15%;
     }
 }  

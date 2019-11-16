@@ -128,9 +128,10 @@ nav a:hover
 {
     background: black;
 }
-.particles-js
+.card
 {
-    height: 600px;
+    margin-left: auto; margin-right: auto;
+    width: 40%;
 }
 footer
 {
@@ -141,7 +142,7 @@ footer
 }
 footer p
 {
-    margin-top: 3%;
+    margin-top: 1%;
 }
 @media only screen and (max-width: 415px) 
 {
@@ -150,4 +151,8 @@ footer p
         padding: 70px;
         margin-bottom: 10%;
     }
-}  
+    .card
+    {
+        width: 100%;
+    }
+}

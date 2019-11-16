@@ -11,6 +11,10 @@ nav
 li a:hover
 {
     font-size: 28px;
+    border-bottom: 1px solid white;
+}
+li a
+{
     transition: all 0.3s ease-in-out;
 }
 .navbar-nav

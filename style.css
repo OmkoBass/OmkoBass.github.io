@@ -66,6 +66,11 @@ nav a
     background: #302040;
     padding: 26px;
 }
+.contact h1
+{
+    border-top: 1px solid white;
+    padding-top: 32px;
+}
 .contact p, input
 {
     text-align: center;

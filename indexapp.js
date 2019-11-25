@@ -1,3 +1,33 @@
+let textarea = document.getElementById("messagebox");
+
+function appear()
+{
+    let electricalText = document.querySelector('.electrical-text');
+    let programmingText = document.querySelector('.programming-text');
+    let mechanicalText = document.querySelector('.mechanical-text');
+
+    let electricalPosition = electricalText.getBoundingClientRect().top;
+    let programmingPosition = programmingText.getBoundingClientRect().top;
+    let mechanicalPosition = mechanicalText.getBoundingClientRect().top;
+    
+    let screenPosition = window.innerHeight / 1.6;
+
+    if(electricalPosition < screenPosition)
+        electricalText.classList.add('appear');
+    if(electricalPosition > screenPosition * 1.6)
+        electricalText.classList.remove('appear');
+
+    if(programmingPosition < screenPosition)
+        programmingText.classList.add('appear');
+    if(programmingPosition > screenPosition * 1.6)
+        programmingText.classList.remove('appear');
+
+    if(mechanicalPosition < screenPosition)
+        mechanicalText.classList.add('appear');
+    if(mechanicalPosition > screenPosition * 1.6)
+        mechanicalText.classList.remove('appear');
+}
+
 function fadeout(id)
 {
     var target = document.getElementById(id);
@@ -55,7 +85,7 @@ function aligncenter()
     textarea.style.textAlign = "center";
 }
 
-let textarea = document.getElementById("messagebox");
+window.addEventListener('scroll', appear);
 textarea.addEventListener('focus', alignleft);
 textarea.addEventListener('focusout', aligncenter);
 

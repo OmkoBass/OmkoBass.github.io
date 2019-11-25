@@ -72,6 +72,7 @@ nav a
 }
 .programming-text
 {
+    margin-left: 3em;
     opacity: 0;
     max-width: 40%;
     transform: translateY(-40px);
@@ -146,6 +147,7 @@ footer
     .programming-text
     {
         max-width: 100%;
+        margin-left: 0em;
     }
     .programming img
     {

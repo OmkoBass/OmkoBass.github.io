@@ -134,6 +134,7 @@ footer
     .electrical-text
     {
         max-width: 100%;
+        margin-bottom: 1em;
     }
     .electrical img
     {
@@ -151,6 +152,7 @@ footer
     {
         max-width: 100%;
         margin-left: 0em;
+        margin-bottom: 1em;
     }
     .programming img
     {
@@ -168,6 +170,7 @@ footer
     .mechanical-text
     {
         max-width: 100%;
+        margin-bottom: 1em;
     }
     .mechanical img
     {

@@ -30,6 +30,7 @@ nav a
 {
     background: url(Images/Circuit.jpg); 
     background-position: center; 
+    background-size: cover;
     color:white;
     text-align: center;
     text-shadow: 4px 4px 4px black;

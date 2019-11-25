@@ -49,10 +49,6 @@ nav a
     background-color: black;
     transition: 0.5s all ease-in-out;
 }
-.electrical img
-{
-    transform: translateX(120px);
-}
 .electrical-text
 {
     opacity: 0;
@@ -63,7 +59,7 @@ nav a
 .appear
 {
     opacity: 1 !important;
-    transform: translateY(0px);
+    transform: translateY(0px) !important;
     transition: 0.8s all ease-in-out;
 }
 .programming
@@ -74,15 +70,11 @@ nav a
     margin: 12em 0em 12em 0em;
     background-color: black;
 }
-.programming img
-{
-    transform: translateX(-120px);
-}
 .programming-text
 {
     opacity: 0;
     max-width: 40%;
-    transform: translateY(-100px);
+    transform: translateY(-40px);
     color:white;
 }
 .mechanical
@@ -94,16 +86,11 @@ nav a
     background-color: black;
     transition: 0.5s all ease-in-out;
 }
-.mechanical img
-{
-    opacity: 0.6;
-    transform: translateX(120px);
-}
 .mechanical-text
 {
     opacity: 0;
     max-width: 40%;
-    transform: translateY(-100px);
+    transform: translateY(-40px);
     color:white;
 }
 .contact
@@ -130,6 +117,10 @@ footer
 }
 @media only screen and (max-width: 615px) 
 {
+    body
+    {
+        overflow-x: hidden;
+    }
     .electrical
     {
         flex-direction: column;
@@ -142,8 +133,9 @@ footer
     }
     .electrical img
     {
-        transform: translateX(0px);
+        transform: translateX(-80px);
         height: 20em;
+        width: 20em;
     }
     .programming
     {
@@ -157,8 +149,9 @@ footer
     }
     .programming img
     {
-        transform: translateX(0px);
+        transform: translateX(-80px);
         height: 20em;
+        width: 20em;
         margin-bottom: 2em;
     }
     .mechanical
@@ -173,7 +166,8 @@ footer
     }
     .mechanical img
     {
-        transform: translateX(0px);
+        transform: translateX(-80px);
         height: 20em;
+        width: 20em;
     }
 }  

@@ -21,7 +21,7 @@ li a
 {
     font-size: 16px;
     justify-content: space-around;
-    flex-basis: 160%;
+    flex-basis: 100%;
 }
 .middle
 {
@@ -39,7 +39,7 @@ li a
 }
 .toknow
 {
-    background: linear-gradient(to top, #1e453e, black);
+    background: linear-gradient(to top, #004a2f, black);
     color: white;
     text-align: center;
 }
@@ -56,11 +56,11 @@ li a
 }
 .editor
 {
-    background-color: #1e453e;
+    background-color: #004a2f;
 }
 .paid
 {
-    background-color: #1e453e;
+    background-color: #004a2f;
     padding: 32px;
 }
 .editor h1
@@ -76,7 +76,7 @@ li a
 }
 .thinking
 {
-    background-color: #1e453e;
+    background-color: #004a2f;
     color: white;
     text-align: center;
 }
@@ -90,7 +90,7 @@ li a
 {
     color: white;
     text-align: center;
-    background: linear-gradient(to top, black, #1e453e);
+    background: linear-gradient(to top, black, #004a2f);
 }
 .pointers h1
 {

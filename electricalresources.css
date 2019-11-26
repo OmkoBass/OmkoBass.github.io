@@ -6,11 +6,11 @@
 }
 nav
 {
-    background: linear-gradient(to top,#202040, black);
+    background-color: black;
 }
 li a:hover
 {
-    font-size: 28px;
+    font-size: 22px;
     border-bottom: 1px solid white;
 }
 li a
@@ -19,7 +19,7 @@ li a
 }
 .navbar-nav
 {
-    font-size: 22px;
+    font-size: 16px;
     justify-content: right;
     flex-basis: 100%;
 }

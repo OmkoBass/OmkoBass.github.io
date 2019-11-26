@@ -10,7 +10,7 @@ nav
 }
 nav a:hover
 {
-    font-size: 26px;
+    font-size: 22px;
     border-bottom: 1px solid white;
 }
 nav a
@@ -19,9 +19,9 @@ nav a
 }
 .navbar-nav
 {
-    font-size: 20px;
+    font-size: 16px;
     justify-content: space-around;
-    flex-basis: 160%;
+    flex-basis: 100%;
 }
 .middle
 {
@@ -144,6 +144,10 @@ nav a
     letter-spacing: 12px;
 }
 .tesla
+{
+    background: black;
+}
+.trash
 {
     background: black;
 }

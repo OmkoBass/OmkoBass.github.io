@@ -6,7 +6,7 @@
 }
 nav
 {
-    background: linear-gradient(180deg, #203040, black);
+    background-color: black;
 }
 li a:hover
 {
@@ -25,9 +25,11 @@ li a
 }
 .middle
 {
+    height: 90vh;
+    background-size: cover;
     text-align: center;
     color:white;
-    background-image: url(Images/Programming/background.webp);
+    background-image: url(Images/Programming/background.jpg);
     background-position: bottom;
     text-shadow: 4px 4px 4px black;
 }
@@ -37,13 +39,29 @@ li a
 }
 .toknow
 {
-    background: linear-gradient(to top, #203040, black);
+    background: linear-gradient(to top, #1e453e, black);
     color: white;
     text-align: center;
 }
+.toknow-text
+{
+    opacity: 0;
+    transform: translateY(30px);
+}
+.appear
+{
+    opacity: 1;
+    transform: translateY(0px);
+    transition: 0.8s all ease-in-out;
+}
 .editor
 {
-    background-color: #203040;
+    background-color: #1e453e;
+}
+.paid
+{
+    background-color: #1e453e;
+    padding: 32px;
 }
 .editor h1
 {
@@ -58,6 +76,7 @@ li a
 }
 .thinking
 {
+    background-color: #1e453e;
     color: white;
     text-align: center;
 }
@@ -71,7 +90,7 @@ li a
 {
     color: white;
     text-align: center;
-    background: linear-gradient(to top, black, #203040);
+    background: linear-gradient(to top, black, #1e453e);
 }
 .pointers h1
 {
@@ -82,6 +101,7 @@ li a
 {
     display: flex;
     justify-content: space-between;
+    flex-basis: 20%;
     background-color: black;
 }
 .ritchie
@@ -103,7 +123,7 @@ footer
     padding: 25px;
     text-align: center;
 }
-@media only screen and (max-width: 415px) 
+@media only screen and (max-width: 615px) 
 {
     .middle h1
     {

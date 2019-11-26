@@ -86,7 +86,7 @@ nav a
     display: flex;
     padding: 24px;
     padding: 100px;
-    margin: 6em 0em 6em 0em;
+    margin: 6em 0em 0em 0em;
     background-color: black;
     transition: 0.5s all ease-in-out;
 }

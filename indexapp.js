@@ -88,4 +88,3 @@ function aligncenter()
 window.addEventListener('scroll', appear);
 textarea.addEventListener('focus', alignleft);
 textarea.addEventListener('focusout', aligncenter);
-

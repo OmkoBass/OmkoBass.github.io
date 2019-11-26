@@ -2,6 +2,7 @@ function appear()
 {
     let toKnowText = document.querySelector('.toknow-text');
     let toKnowPosition = toKnowText.getBoundingClientRect().top;
+    
     let screenPosition = window.innerHeight / 1.6;
 
     if(toKnowPosition < screenPosition)

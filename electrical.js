@@ -12,10 +12,12 @@ function appear()
 }
 
 window.addEventListener('load', () => {
-    const preload = document.querySelector('.preload');
-    preload.classList.add('loaded');
-    const overflow = document.querySelector('*');
-    overflow.classList.add('overflowadded');
+    setTimeout(() => {
+        const preload = document.querySelector('.preload');
+        preload.classList.add('loaded');
+        const overflow = document.querySelector('*');
+        overflow.classList.add('overflowadded');
+    }, 500);
 });
 
 window.addEventListener('scroll', appear);

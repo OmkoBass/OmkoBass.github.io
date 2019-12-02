@@ -18,12 +18,12 @@
     width: 11em;
     height: 11em;
     border-radius: 50%;
-    background: darkblue;
-    background: -moz-linear-gradient(left, darkblue 10%, rgba(255,0,0, 0) 42%);
-    background: -webkit-linear-gradient(left, darkblue 10%, rgba(255,0,0, 0) 42%);
-    background: -o-linear-gradient(left, darkblue 10%, rgba(255,0,0, 0) 42%);
-    background: -ms-linear-gradient(left, darkblue 10%, rgba(255,0,0, 0) 42%);
-    background: linear-gradient(to right, darkblue 10%, rgba(255,0,0, 0) 42%);
+    background: #000040;
+    background: -moz-linear-gradient(left, #000040 10%, rgba(0,0,64, 0) 42%);
+    background: -webkit-linear-gradient(left, #000040 10%, rgba(0,0,64, 0) 42%);
+    background: -o-linear-gradient(left, #000040 10%, rgba(0,0,64, 0) 42%);
+    background: -ms-linear-gradient(left, #000040 10%, rgba(0,0,64, 0) 42%);
+    background: linear-gradient(to right, #000040 10%, rgba(0,0,64, 0) 42%);
     position: relative;
     -webkit-animation: load3 1.4s infinite linear;
     animation: load3 1.4s infinite linear;
@@ -35,7 +35,7 @@
 {
     width: 50%;
     height: 50%;
-    background: darkblue;
+    background: #000040;
     border-radius: 100% 0 0 0;
     position: absolute;
     top: 0;
@@ -216,10 +216,6 @@ footer
     body
     {
         overflow-x: hidden;
-    }
-    .loader
-    {
-        margin-top: 40%;
     }
     .electrical
     {

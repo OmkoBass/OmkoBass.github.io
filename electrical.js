@@ -11,4 +11,11 @@ function appear()
         toKnowText.classList.remove('appear');
 }
 
+window.addEventListener('load', () => {
+    const preload = document.querySelector('.preload');
+    preload.classList.add('loaded');
+    const overflow = document.querySelector('*');
+    overflow.classList.add('overflowadded');
+});
+
 window.addEventListener('scroll', appear);

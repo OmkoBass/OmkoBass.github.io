@@ -85,6 +85,13 @@ function aligncenter()
     textarea.style.textAlign = "center";
 }
 
+window.addEventListener('load', () => {
+    const preload = document.querySelector('.preload');
+    preload.classList.add('loaded');
+    const overflow = document.querySelector('*');
+    overflow.classList.add('overflowadded');
+});
+
 window.addEventListener('scroll', appear);
 textarea.addEventListener('focus', alignleft);
 textarea.addEventListener('focusout', aligncenter);

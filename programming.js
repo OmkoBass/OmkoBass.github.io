@@ -23,6 +23,7 @@ function appear()
 }
 
 window.addEventListener('load', () => {
+    scroll(0,0);
     setTimeout(() => {
         const preload = document.querySelector('.preload');
         preload.classList.add('loaded');

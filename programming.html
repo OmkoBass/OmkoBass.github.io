@@ -5,8 +5,6 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="libraries/codemirror-5.49.2/lib/codemirror.css">
-        <link rel="stylesheet" href="libraries/codemirror-5.49.2/theme/dracula.css">
         <link rel="stylesheet" href="programming.css">
         <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> 
     </head>
@@ -25,7 +23,7 @@
                     <a class="nav-link" href="index.html"> Home </a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#"> Resources </a>
+                    <a class="nav-link" href="programmingresources.html"> Resources </a>
                     </li>
                 </ul>
             </div>
@@ -43,38 +41,6 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo unde nesciunt, at adipisci deleniti quae aliquid molestias ipsa velit rerum. Deserunt quasi commodi officiis quod nam quos numquam, saepe suscipit?</p>
                 </div>
             </div>
-        </div>
-        <div class="editor">
-            <h1 style="text-shadow: 4px 4px 4px black;">You can look cool and smart while doing it!</h1>
-            <textarea id="textarea">
-        import turtle
-        import math
-        import colorsys
-            
-        phi = 180 * (3 - math.sqrt(5))
-            
-        t = turtle.Pen()
-        t.speed(0)
-            
-        def square(t, size):
-            for tmp in range(0,4):
-                t.forward(size)
-                t.right(90)
-            
-            
-        num = 200
-            
-        for x in reversed(range(0, num)):
-            t.fillcolor(colorsys.hsv_to_rgb(x/num, 1.0, 1.0))
-            t.begin_fill()
-            t.circle(5 + x, None, 11)
-            square(t, 5 + x)
-            t.end_fill()
-            t.right(phi)
-            t.right(.8)
-            
-        turtle.mainloop()
-            </textarea>
         </div>
         <div class="container-fluid paid">
             <h1 style="color: white; text-align: center; padding: 16px;">Most paid programming languages</h1>
@@ -141,8 +107,6 @@
         </footer>
         <script src="bootstrap/jquery-3.4.1.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
-        <script src="libraries/codemirror-5.49.2/lib/codemirror.js"></script>
-        <script src="libraries/codemirror-5.49.2/mode/python/python.js"></script>
         <script src="programming.js"></script>
     </body>
 </html>

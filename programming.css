@@ -146,25 +146,10 @@ li a
     transform: translateY(0px);
     transition: 0.8s all ease-in-out;
 }
-.editor
-{
-    background-color: #004a2f;
-}
 .paid
 {
     background-color: #004a2f;
     padding: 32px;
-}
-.editor h1
-{
-    color:white;
-    padding: 16px;
-    font-weight: bold;
-    text-align: center;
-}
-.CodeMirror
-{
-    margin-left: 20%;
 }
 .thinking
 {
@@ -220,11 +205,6 @@ footer
     .middle h1
     {
         padding: 30px;
-    }
-    .editor
-    {
-        font-size: 12px;
-        text-align: left;
     }
     .charvar
     {

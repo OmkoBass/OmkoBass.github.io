@@ -131,7 +131,8 @@ li a
 }
 .toknow
 {
-    background: linear-gradient(to top, #004a2f, black);
+    background: url(Images/Programming/background1.png);
+    background-position: center;
     color: white;
     text-align: center;
 }
@@ -148,12 +149,13 @@ li a
 }
 .paid
 {
-    background-color: #004a2f;
+    background-color: black;
     padding: 32px;
 }
 .thinking
 {
-    background-color: #004a2f;
+    background: url(Images/Programming/background2.png);
+    background-position: left;
     color: white;
     text-align: center;
 }
@@ -165,9 +167,9 @@ li a
 }
 .pointers
 {
+    background-color: black;
     color: white;
     text-align: center;
-    background: linear-gradient(to top, black, #004a2f);
 }
 .pointers h1
 {
@@ -179,7 +181,8 @@ li a
     display: flex;
     justify-content: space-between;
     flex-basis: 20%;
-    background-color: black;
+    background: url(Images/Programming/background1.png);
+    background-position: left;
 }
 .ritchie
 {

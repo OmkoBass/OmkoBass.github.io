@@ -132,7 +132,8 @@ li a
 .toknow
 {
     background: url(Images/Programming/background1.png);
-    background-position: center;
+    background-position: right;
+    background-position-y: 30%;
     color: white;
     text-align: center;
 }
@@ -149,13 +150,14 @@ li a
 }
 .paid
 {
-    background-color: black;
+    background: url(Images/Programming/background1.png);
+    background-position-x: -13%;
+    background-position-y: 50%;
     padding: 32px;
 }
 .thinking
 {
-    background: url(Images/Programming/background2.png);
-    background-position: left;
+    background-color: black;
     color: white;
     text-align: center;
 }
@@ -167,7 +169,7 @@ li a
 }
 .pointers
 {
-    background-color: black;
+    background: url(Images/Programming/background2.png);
     color: white;
     text-align: center;
 }
@@ -181,8 +183,7 @@ li a
     display: flex;
     justify-content: space-between;
     flex-basis: 20%;
-    background: url(Images/Programming/background1.png);
-    background-position: left;
+    background: url(Images/Programming/backgroundcharvar.png);
 }
 .ritchie
 {

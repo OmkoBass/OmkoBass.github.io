@@ -20,14 +20,14 @@ function startStop()
     {
         let Gears = document.getElementById('gears');
         Gears.src = '/Images/Mechanical/clockworkimg.png';
-        moveGears.innerHTML = 'Click me to stop the gears!';
+        moveGears.innerHTML = 'Click me to start the gears!';
         gearsMoving = false;
     }
     else
     {
         let Gears = document.getElementById('gears');
         Gears.src = '/Images/Mechanical/clockwork.gif';
-        moveGears.innerHTML = 'Click me to start the gears!';
+        moveGears.innerHTML = 'Click me to stop the gears!';
         gearsMoving = true;
     }
 }

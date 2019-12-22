@@ -117,7 +117,7 @@ nav a
 }
 .middle
 {
-    background: url(Images/Network.jpg);
+    background: url(Images/Electrical/Network.jpg);
     background-position: center; 
     color:white;
     text-align: center;
@@ -133,7 +133,7 @@ nav a
 {
     color: white;
     text-align: center;
-    background: linear-gradient(to top,#202040, black);
+    background-color: black;
 }
 .toknow h1
 {
@@ -149,13 +149,6 @@ nav a
     opacity: 1 !important;
     transform: translateY(0px);
     transition: 0.8s all ease-in-out;
-}
-.about
-{
-    display: flex;
-    flex-direction: column;
-    background-color: #202040;
-    color: white;
 }
 .title
 {

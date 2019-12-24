@@ -230,10 +230,12 @@ nav a
 }
 .tesla
 {
+    text-align: center;
     background: black;
 }
 .trash
 {
+    text-align: center;
     background: black;
 }
 .card

@@ -20,67 +20,65 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                    <a class="nav-link" href="electrical.html"> Electrical Engineering </a>
+                    <a class="nav-link" href="electrical.html"> Elektrotehnika </a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="programming.html"> Programming </a>
+                    <a class="nav-link" href="programming.html"> Programiranje </a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="mechanical.html"> Mechanical Engineering </a>
+                    <a class="nav-link" href="mechanical.html"> Mehanika </a>
                     </li>
                 </ul>
             </div>
         </nav>
         <div class="jumbotron jumbotron-fluid middle">
             <div class="container">
-                <h1>THE MOST IMPORTANT BRANCHES OF SCIENCE</h1>
+                <h1>NAJVAZNIJE GRANE NAUKE</h1>
             </div>
         </div>
         <div class="jumbotron jumbotron-fluid electrical">
             <div id="electrical-text" class="electrical-text">
-                <h1 style="text-decoration: underline;">Smart</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo unde nesciunt, at adipisci deleniti quae aliquid molestias ipsa velit rerum. Deserunt quasi commodi officiis quod nam quos numquam, saepe suscipit?</p>
+                <h1 style="text-decoration: underline;">Pametno</h1>
+                <p>Inzenjerstvo nije za svakog sto znaci da samo najbolji i najradniji ljudi sa kvalitetnom matematicko-logickom jedinicom u mozgu mogu da budu uspesni.</p>
+                <p>Ta vrsta inteligencije je gurnula civilizaciju napred i ove tri nauke: Elektrotehnika, Programiranje i Mehanika ce nastaviti u tom cilju.</p>
             </div>
             <img src="Images/cmp.png">
-        </div>
         </div>
         <div class="jumbotron jumbotron-fluid programming">
             <img src="Images/code.webp">
             <div class="programming-text">
-                <h1 style="text-decoration: underline;">Efficient</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo unde nesciunt, at adipisci deleniti quae aliquid molestias ipsa velit rerum. Deserunt quasi commodi officiis quod nam quos numquam, saepe suscipit?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ducimus vitae deserunt neque nam blanditiis praesentium reprehenderit quibusdam nemo dolorum aut eveniet soluta earum eos ipsa corrupti, ad quod molestiae.</p>
+                <h1 style="text-decoration: underline;">Efikasno</h1>
+                <p>Tezimo idealnom svetu koji nam daje najbolje performanse za najmanje troskove i cenu. I svaki dan smo sve blizi tome.</p>
             </div>
         </div>
         <div class="jumbotron jumbotron-fluid mechanical">
             <div class="mechanical-text">
-                <h1 style="text-decoration:none;">Useful</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ducimus vitae deserunt neque nam blanditiis praesentium reprehenderit quibusdam nemo dolorum aut eveniet soluta earum eos ipsa corrupti, ad quod molestiae.</p>
+                <h1 style="text-decoration: underline;">Korisno</h1>
+                <p>Sve to radimo iz jednog razloga. Da nam poboljsa kvalitet zivota i ucini stvari laksim. Bez inzenjerstva nikad ne bi smo dosli do luksuza koje imamo danas.</p>
+                <p>Danasnje stvari koje gledamo kao "Nista posebno" bi coveku pre 100 godina bile prava magija.</p>
             </div>
             <img src="Images/mech.jpg">
         </div>
-        <div class="contact">
-            <div class="container">
-                <div class="col-12" style="text-align: center; margin: 16px 0px 16px 0px;"><h1>Contact Us!</h1></div>
-                <div class="col-12"><p>Your Email</p></div>
-                <div class="col-12"> <input type="email" class="form-control" id="email" placeholder="example: someone@email.com"></div>
-                <div class="col-12" style="margin: 16px 0px 0px 0px;"><p>Your Message</p></div>
-                <div class="col-12"> <textarea style="height: 120px; text-align: center;" class="form-control" id="messagebox" placeholder="example: Love the page!"></textarea></div>
-                <div class="col-12" id="send" style="text-align: center; margin: 16px 0px 0px 0px;"><button class="btn btn-light" onclick="validate()"> Send! </button></div>
-                <div class="col-12">
-                    <div class="alert alert-success" style="height: 0; margin: 16px 0px 0px 0px; opacity: 0;" id="alertsuccess">
-                        <h3 id="messagesuccess" style="text-align: center;">Success!</h3>
-                    </div>
-                    <div class="alert alert-danger" style="height: 0; margin: 16px 0px 0px 0px; opacity: 0;" id="alertdanger">
-                        <h3 id="messagedanger" style="text-align: center;">Bad input!</h3>
-                    </div>
+        <h1 style="color: white; text-align: center; border-top: solid white 1px; margin: 2em 2em 0em 2em;">Kontaktirajte nas!</h1>
+        <div class="container">
+            <div class="contact">
+                <Label>Vas e-mail:</Label>
+                <input type="email" class="form-control" id="email" placeholder="someone@email.com"></input>
+                <div class="error">
+                    <p>Unesite validan email.</p>
+                </div>
+                <Label>Vasa poruka:</Label>
+                <input type="textarea" class="form-control" id="text" placeholder="I love this site!"></input>
+                <button id="send" class="btn btn-light"> Posalji </button>
+                <div class="success">
+                    <p>Uspesno!</p>
                 </div>
             </div>
         </div>
         <footer>
             <p>Copyright @OmkoBass</p>
         </footer>
-        <script type="text/javascript" src="indexapp.js"></script>
+        <script type="text/javascript" src="app.js"></script>
         <script type="text/javascript" src="bootstrap/jquery-3.4.1.min.js"></script>
         <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
     </body>

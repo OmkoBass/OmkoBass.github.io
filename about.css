@@ -97,10 +97,14 @@ footer
     .me img
     {
         width: 100%;
-        margin-bottom: 3em;
+        margin-bottom: 1em;
     }
     .normal
     {
         opacity: 0;
+    }
+    .other
+    {
+        flex-direction: column;
     }
 }

@@ -72,6 +72,7 @@ nav a
     flex-direction: row;
     justify-content: space-around;
     margin-bottom: 2em;
+    align-items: center;
 }
 .other img
 {
@@ -97,10 +98,14 @@ footer
     .me img
     {
         width: 100%;
-        margin-bottom: 3em;
+        margin-bottom: 1em;
     }
     .normal
     {
         opacity: 0;
+    }
+    .other
+    {
+        flex-direction: column;
     }
 }

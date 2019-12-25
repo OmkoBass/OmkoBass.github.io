@@ -142,6 +142,11 @@ nav a
     background-color: black;
     transition: 0.5s all ease-in-out;
     border-bottom: 1px solid white;
+    text-align: left;
+}
+.electrical img
+{
+    width: 46em;
 }
 .electrical-text
 {
@@ -164,6 +169,11 @@ nav a
     margin: 6em 0em 6em 0em;
     background-color: black;
     border-bottom: 1px solid white;
+    text-align: right;
+}
+.programming img
+{
+    width: 34em;
 }
 .programming-text
 {
@@ -181,6 +191,11 @@ nav a
     margin: 6em 0em 0em 0em;
     background-color: black;
     transition: 0.5s all ease-in-out;
+    text-align: left;
+}
+.mechanical img
+{
+    width: 46em;
 }
 .mechanical-text
 {
@@ -188,6 +203,17 @@ nav a
     max-width: 40%;
     transform: translateY(-40px);
     color:white;
+}
+.quote
+{
+    background-color: black;
+    
+}
+.quote img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .contact
 {
@@ -225,6 +251,14 @@ nav a
     opacity: 0;
     grid-column: 2/3;
     color: green;
+    font-size: 16px;
+    transition: 0.3s ease-in-out all;
+}
+.texterror
+{
+    opacity: 0;
+    grid-column: 2/3;
+    color: red;
     font-size: 16px;
     transition: 0.3s ease-in-out all;
 }
@@ -280,7 +314,7 @@ footer
     {
         flex-direction: column;
         text-align: center;
-        margin: 6em 0em 6em 0em;
+        margin: 6em 0em 0em 0em;
     }
     .mechanical-text
     {
@@ -292,6 +326,10 @@ footer
         transform: translateX(-80px);
         height: 20em;
         width: 20em;
+    }
+    .quote img
+    {
+        width: 100%;
     }
     .contact
     {

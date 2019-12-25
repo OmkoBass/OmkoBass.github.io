@@ -219,6 +219,31 @@ nav a
     font-size: 20px;
     padding: 24px;
 }
+.basic
+{
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+.elements
+{
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    text-align: center;
+    background-color: black;
+    font-size: 1em;
+}
+.elements img
+{
+    width: 15em;
+}
+.capacitor
+{
+    margin-bottom: 2em;
+}
 .mastermind
 {
     text-align:  center;

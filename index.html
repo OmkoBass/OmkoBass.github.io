@@ -20,61 +20,69 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="electrical.html"> Elektrotehnika </a>
+                        <a class="nav-link" href="electrical.html" id="oet"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="programming.html"> Programiranje </a>
+                        <a class="nav-link" href="programming.html" id="prog"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="mechanical.html"> Mehanika </a>
+                        <a class="nav-link" href="mechanical.html" id="mech"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html"> O Meni </a>
+                        <a class="nav-link" href="about.html" id="about"></a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="language btn btn-dark" id="language">SRB/ENG</button>
                     </li>
                 </ul>
             </div>
         </nav>
         <div class="jumbotron jumbotron-fluid middle">
             <div class="container">
-                <h1>NAJVAZNIJE GRANE NAUKE</h1>
+                <h1 id="main"></h1>
             </div>
         </div>
         <div class="jumbotron jumbotron-fluid electrical">
             <div id="electrical-text" class="electrical-text">
-                <h1 style="text-decoration: underline;">Pametno</h1>
-                <p>Inzenjerstvo nije za svakog sto znaci da samo najbolji i najradniji ljudi sa kvalitetnom matematicko-logickom jedinicom u mozgu mogu da budu uspesni.</p>
-                <p>Ta vrsta inteligencije je gurnula civilizaciju napred i ove tri nauke: Elektrotehnika, Programiranje i Mehanika ce nastaviti u tom cilju.</p>
+                <h1 style="text-decoration: underline;" id="smart"></h1>
+                <p id="desc1"></p>
             </div>
             <img src="Images/cmp.png">
         </div>
         <div class="jumbotron jumbotron-fluid programming">
             <img src="Images/code.webp">
             <div class="programming-text">
-                <h1 style="text-decoration: underline;">Efikasno</h1>
-                <p>Tezimo idealnom svetu koji nam daje najbolje performanse za najmanje troskove i cenu. I svaki dan smo sve blizi tome.</p>
+                <h1 style="text-decoration: underline;" id="efficient"></h1>
+                <p id="desc2"></p>
             </div>
         </div>
         <div class="jumbotron jumbotron-fluid mechanical">
             <div class="mechanical-text">
-                <h1 style="text-decoration: underline;">Korisno</h1>
-                <p>Sve to radimo iz jednog razloga. Da nam poboljsa kvalitet zivota i ucini stvari laksim. Bez inzenjerstva nikad ne bi smo dosli do luksuza koje imamo danas.</p>
-                <p>Danasnje stvari koje gledamo kao "Nista posebno" bi coveku pre 100 godina bile prava magija.</p>
+                <h1 style="text-decoration: underline;" id="useful"></h1>
+                <p id="desc3">
+                </p>
             </div>
             <img src="Images/mech.jpg">
         </div>
-        <h1 style="color: white; text-align: center; border-top: solid white 1px; margin: 2em 2em 0em 2em;">Kontaktirajte nas!</h1>
+        <div class="jumbotron jumbotron-fluid quote">
+            <img src="Images/Cato.jpg">
+        </div>
+        <h1 style="color: white; text-align: center; border-top: solid white 1px; margin: 2em 2em 0em 2em;" id="contactus">Kontaktirajte nas!</h1>
         <div class="container">
             <div class="contact">
-                <Label>Vas e-mail:</Label>
-                <input type="email" class="form-control" id="email" placeholder="someone@email.com"></input>
+                <Label id="youremail"></Label>
+                <input type="email" class="form-control" id="email"></input>
                 <div class="error">
-                    <p>Unesite validan email.</p>
+                    <p id="validemail"></p>
                 </div>
-                <Label>Vasa poruka:</Label>
-                <input type="textarea" class="form-control" id="text" placeholder="I love this site!"></input>
-                <button id="send" class="btn btn-light"> Posalji </button>
+                <Label id="message"></Label>
+                <input type="textarea" class="form-control" id="text"></input>
+                <div class="texterror">
+                    <p id="validmessage"></p>
+                </div>
+                <button id="send" class="btn btn-light"></button>
                 <div class="success">
-                    <p>Uspesno!</p>
+                    <p id="successful"></p>
                 </div>
             </div>
         </div>

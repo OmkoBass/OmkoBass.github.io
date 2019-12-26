@@ -12,8 +12,11 @@ let desc3 = document.getElementById('desc3');
 let programming = document.getElementById('programming');
 let desc4 = document.getElementById('desc4');
 let elementstext = document.getElementById('elementstext');
+let wireheader = document.getElementById('wireheader');
 let wiretext = document.getElementById('wiretext');
+let resistorheader = document.getElementById('resistorheader');
 let resistortext = document.getElementById('resistortext');
+let capacitorheader = document.getElementById('capacitorheader');
 let capacitortext = document.getElementById('capacitortext');
 let tesla = document.getElementById('tesla');
 let teslatext = document.getElementById('teslatext');
@@ -41,10 +44,13 @@ function changeLanguage()
         programming.innerHTML = 'Programming';
         desc4.innerHTML = `Programming knowledge is desierable, the logical part counts more than the 'real' programming part.`;
         elementstext.innerHTML = 'The most basic parts of electrical circuits';
+        wireheader.innerHTML = 'Wire';
         wiretext.innerHTML = `The most basic thing in electrical circuits. Wires are there to transport the electricity. <br>
         Without them there's no transporting which means there's no activity in the circuit.`;
+        resistorheader.innerHTML = 'Resistor';
         resistortext.innerHTML = `Resistor is the element that lowers the electricity, we can imagine it by thinking that it squeezes the current's path and the voltage pushes the current forward. <br>
         The unit for resistance is Ohm`;
+        capacitorheader.innerHTML = 'Capacitor';
         capacitortext.innerHTML = `Capacitor is the element that collects electricity and then rleases it out. <br>
         Every condensator can hold a diffrent ammount of electricity. The unit for capcitivity is Fahrad.`;
         tesla.innerHTML = 'The Greates Mind of Humanity';
@@ -73,9 +79,12 @@ function changeLanguage()
         programming.innerHTML = 'Programiranje';
         desc4.innerHTML = 'Znanje u programiranju je poželjno, više logičko znanje i rešavanje problema nego "pravog" znanja o programiranju.';
         elementstext.innerHTML = 'Najosnovniji elementi električnog kola';
+        wireheader.innerHTML = 'Žica'
         wiretext.innerHTML = 'Najosnovnija stvar u električnom kolu. Žice su nam tu da bi prenele struju.<br> Bez njih nema nikakvog prenosa što znači da nema aktivnosti u kolu.';
+        resistorheader.innerHTML = 'Otpornik'
         resistortext.innerHTML = `Otpornik je element koji smanjuje struju, njega možemo da zamislimo kao da zateze prolaz struji a napon kao da gura struju napred. <br>
         Jedinica za otpornost je OM.`;
+        capacitorheader.innerHTML = 'Kondenzator';
         capacitortext.innerHTML = `Kondenzator je element koji prikuplja u sebi struju i pušta je. <br>
         Svaki kondenzator moze da sadrži različitu količinu struje. Jedinica za kapacitivnost je Farad.`;
         tesla.innerHTML = 'Najveci um svih vremena';
@@ -110,7 +119,7 @@ window.addEventListener('load', () => {
         preload.classList.add('loaded');
         const overflow = document.querySelector('*');
         overflow.classList.add('overflowadded');
-    }, 500);
+    }, 250);
 });
 
 changeLanguage();

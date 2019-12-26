@@ -18,7 +18,7 @@ window.addEventListener('load', () => {
         preload.classList.add('loaded');
         const overflow = document.querySelector('*');
         overflow.classList.add('overflowadded');
-    }, 500);
+    }, 250);
 });
 
 window.addEventListener('scroll', appear);

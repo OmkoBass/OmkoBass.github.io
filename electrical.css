@@ -240,6 +240,11 @@ nav a
 {
     width: 15em;
 }
+.resistor
+{
+    color: white;
+    background-color: black;
+}
 .capacitor
 {
     margin-bottom: 2em;

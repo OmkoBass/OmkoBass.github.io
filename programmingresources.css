@@ -31,7 +31,11 @@ li a
 }
 .books img
 {
-    width: 40%;
+    width: 16em;
+}
+.book
+{
+    margin: 2em;
 }
 .books p
 {

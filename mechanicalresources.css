@@ -29,9 +29,13 @@ li a
     padding: 50px;
     text-align: center;
 }
+.book
+{
+    margin: 2em;
+}
 .books img
 {
-    width: 40%;
+    width: 16em;
 }
 .books p
 {

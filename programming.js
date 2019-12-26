@@ -1,3 +1,10 @@
+const language = document.getElementById('language');
+
+function changeLanguage()
+{
+    
+}
+
 function appear()
 {
     let toKnowText = document.querySelector('.toknow-text');
@@ -21,4 +28,6 @@ window.addEventListener('load', () => {
     }, 250);
 });
 
+changeLanguage();
+language.addEventListener('click', changeLanguage);
 window.addEventListener('scroll', appear);

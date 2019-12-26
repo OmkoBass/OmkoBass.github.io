@@ -178,24 +178,44 @@ li a
     font-weight: bold;
     padding: 16px;
 }
+.pointers img
+{
+    width: 20em;
+}
+.imporantpeople
+{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.imporantpeople h1
+{
+    margin-bottom: 1em;
+}
 .charvar
 {
     display: flex;
-    justify-content: space-between;
-    flex-basis: 20%;
+    flex-direction: row;
+    justify-content: space-around;
     background-color: black;
 }
 .ritchie
 {
-    margin-left: 10%;
+    text-align: center;
+    width: 25em;
+    margin-bottom: 5em;
 }
 .linus
 {
-    margin-right: 10%;
+    text-align: center;
+    width: 26em;
+    margin-bottom: 5em;
 }
-.linus img
+.linux
 {
-    height: 105%;
+    background-color: black;
+    color: white;
+    text-align: center;
 }
 footer
 {
@@ -216,10 +236,10 @@ footer
     }
     .ritchie
     {
-        margin: 15%;
+        width: 100%;
     }
     .linus
     {
-        margin: 15%;
+        width: 100%;
     }
 }  

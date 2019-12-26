@@ -59,6 +59,18 @@ nav a
 {
     width: 200px;
 }
+.programmingheader
+{
+    text-align: center;
+    margin: 0em 0em 2em 0em;
+    text-decoration: underline; 
+}
+.webheader
+{
+    text-align: center;
+    margin: 2em 0em 2em 0em;
+    text-decoration: underline;
+}
 .web
 {
     display: flex;
@@ -72,6 +84,10 @@ nav a
     background: linear-gradient(to right, #c31432, #240b36);
 }
 .otherheader
+{
+   border-top: 1px solid white;
+}
+.otherheader h1
 {
     text-align: center; 
     margin: 2em 0em 2em 0em; 

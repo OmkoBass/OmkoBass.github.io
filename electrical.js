@@ -32,7 +32,7 @@ function changeLanguage()
     {
         homepage.innerHTML = 'Home';
         resources.innerHTML = 'Resources';
-        main.innerHTML = 'THE KNOWLEDGE OF ELECTRICITY';
+        main.innerHTML = 'ELECTRICAL ENGINEERING';
         toknowheader.innerHTML = 'What you need to know';
         desc1.innerHTML = `For electrical engineering you need exsquisite knowlede of imaginary numbers and their appliance in problems in order to get the solution. <br>
         It's not easy to know electricity and her behaviour, knowledge of physics is imporatnt in order to comprehend the variety of concepts. <br>
@@ -67,7 +67,7 @@ function changeLanguage()
     {
         homepage.innerHTML = 'Početna';
         resources.innerHTML = 'Resursi';
-        main.innerHTML = 'ZNANJE O ELEKTRIČNOJ ENERGIJI';
+        main.innerHTML = 'ELEKTROTEHNIKA';
         toknowheader.innerHTML = 'Šta treba da znate';
         desc1.innerHTML = `Za elektrotehniku je potrebno izvrsno znanje imaginarnih brojeva i primena njih da bi dosli do rešenja našeg problema. <br>
         Nije lako znati struju i njeno ponašanje, potrebno je znanje iz fizike da bi se mogli shvatiti razni koncepti. <br>

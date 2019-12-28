@@ -21,24 +21,27 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html"> Pocetna </a>
+                    <a class="nav-link" href="index.html" id="home"></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="mechanicalresources.html"> Resursi </a>
+                    <a class="nav-link" href="mechanicalresources.html" id="resources"></a>
+                </li>
+                <li class="nav-item">
+                    <button class="language btn btn-dark" id="language">SRB/ENG</button>
                 </li>
             </ul>
         </div>
     </nav>
     <div class="jumbotron jumbotron-fluid middle">
         <div class="container">
-            <h1>MASINSTVO</h1>
+            <h1 id="main"></h1>
         </div>
     </div>
     <div class="jumbotron jumbotron-fluid mechanism">
         <div class="container">
             <div class="gear">
-                <p class="geartext">Mehanika nam omogucava stvari kao sto su sa ovog gif-a da imamo u pravom zivotu. Kad gledamo zupcanike u satu vidimo koliko je kompleksna i precizna stvar a mehanika nam daje mnogo mnogo vise od toga. Bez nje ne bi smo imali: Bilo kakave motore, Tockove, Vetrenjace, Naslonce za vucu, Brodove, Stampanje, Hidrauliku i mnogo drugi stvari.</p>
-                <button id="moveGears" type="button" class="btn btn-warning">Klikni me da pokrenes!</button>
+                <p class="geartext" id="geartextt"></p>
+                <button id="moveGears" type="button" class="btn btn-warning"></button>
                 <img id="gears" src="Images/Mechanical/clockworkimg.png" class="gearimg">
             </div>
         </div>
@@ -46,15 +49,15 @@
     <div class="jumbotron jumbotron-fluid toknow">
         <div class="container">
             <div class="toknow-text">
-                <h1>Sta treba da znate</h1>
-                <p>Vrlo moguce da je mehanika najteza grana inzenjerstva u kojoj se samo ulazi sa izvanrednim predznanjem u poljima fizike i matematike.</p>
+                <h1 id="toknowheader"></h1>
+                <p id="toknowtext"></p>
             </div>
         </div>
     </div>
     <div class="jumbotron jumbotron-fluid wisdomheader">
         <div class="container">
-            <h1 id="wisdomwords">Reci mudrosti</h1>
-            <h3 id="wisdomexplenation">Mudre reci mudrih formula</h3>
+            <h1 id="wisdomwords"></h1>
+            <h3 id="wisdomexplenation"></h3>
         </div>
     </div>
     <div class="jumbotron jumbotron-fluid wisdom">
@@ -68,7 +71,7 @@
     </div>
     <div class="jumbotron jumbotron-fluid fame">
         <div class="container">
-            <h1>DVORANA SLAVNIH</h1>
+            <h1 id="halloffame"></h1>
         </div>
     </div>
     <div class="engineers">
@@ -77,7 +80,7 @@
                 <img class="card-img-top" src="Images/Electrical/genius.jpg">
                 <div class="card-body">
                   <h4 class="card-title" style="text-align: center;">Nikola Tesla</h4>
-                  <p class="card-text" style="text-align: center;">Najveci um svih vremena</p>
+                  <p class="card-text" style="text-align: center;" id="tesla"></p>
                 </div>
             </div>
         </div>
@@ -86,7 +89,7 @@
                 <img class="card-img-top" src="Images/Mechanical/Kitaw.jpg">
                 <div class="card-body">
                   <h4 class="card-title" style="text-align: center;">Kitaw Ejugu</h4>
-                  <p class="card-text" style="text-align: center;">Inzenjer iz Etiopije koji je izmislio GPS dok je radio u NASI.</p>
+                  <p class="card-text" style="text-align: center;" id="kitaw"></p>
                 </div>
             </div>
         </div>
@@ -94,8 +97,8 @@
             <div class="card">
                 <img class="card-img-top" src="Images/Mechanical/Wat.jpg">
                 <div class="card-body">
-                  <h4 class="card-title" style="text-align: center;">Dzejms Wat</h4>
-                  <p class="card-text" style="text-align: center;">Skocki izumitelj koji je izmislio moodernu parnu masinu, rotor masinu i kopiranje</p>
+                  <h4 class="card-title" style="text-align: center;">James Watt</h4>
+                  <p class="card-text" style="text-align: center;" id="watt"></p>
                 </div>
             </div>
         </div>
@@ -103,16 +106,21 @@
             <div class="card">
                 <img class="card-img-top" src="Images/Mechanical/George.jpg">
                 <div class="card-body">
-                  <h4 class="card-title" style="text-align: center;">Gorg Stepenson</h4>
-                  <p class="card-text" style="text-align: center;">Britanski izumitelj koji je napravio prvi sistem pruga unutar grada.</p>
+                  <h4 class="card-title" style="text-align: center;">George Stepenson</h4>
+                  <p class="card-text" style="text-align: center;" id="george"></p>
                 </div>
             </div>
         </div>
     </div>
-    <div class="jumbotron jumbotron-fluid fame">
+    <div class="jumbotron jumbotron-fluid manymore">
         <div class="container">
-            <h1>I MNOGI DRUGI...</h1>
+            <h1 id="manymore"></h1>
         </div>
+    </div>
+    <div class="jumobtron jumbotron-fluid phi">
+        <h1 id="phiheader" style="color: darkgoldenrod"></h1>
+        <p id="phitext"></p>
+        <img src="Images/Mechanical/fibonacci.jpg">
     </div>
     <footer>
         <p>Copyright @OmkoBass</p>

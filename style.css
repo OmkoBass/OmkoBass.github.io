@@ -192,6 +192,7 @@ nav a
     background-color: black;
     transition: 0.5s all ease-in-out;
     text-align: left;
+    border-bottom: 1px solid white;
 }
 .mechanical img
 {

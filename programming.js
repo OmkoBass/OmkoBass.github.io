@@ -5,6 +5,7 @@ let resources = document.getElementById('resources');
 let main = document.getElementById('main');
 let toknowheader = document.getElementById('toknowheader');
 let toknowtext = document.getElementById('toknowtext');
+let mostpayed = document.getElementById('mostpayed');
 let programminglanguage = document.getElementById('programminglanguage');
 let salary = document.getElementById('salary');
 let thinkingheader = document.getElementById('thinkingheader');
@@ -35,6 +36,7 @@ function changeLanguage()
         toknowtext.innerHTML = `In order to be a good programmer you need a fine tuned logical unit in your brain. <br>
         Efficient thinking seperates a coder from a programmer.`;
         programminglanguage.innerHTML = 'Programming Languages';
+        mostpayed.innerHTML = 'Most payed programming languages'
         salary.innerHTML = 'Salary';
         thinkingheader.innerHTML = 'Thinking';
         thinkingtext.innerHTML = `It's all about thinking. Knowing the syntax and keeping up to date with new technologies is a huge plus but without knowing the low level stuff, without efficiency, without comprehension of the core aspect a programmer is nothing and easily replacable.`;
@@ -65,6 +67,7 @@ function changeLanguage()
         toknowheader.innerHTML = 'Sta treba da znate';
         toknowtext.innerHTML = `Za programiranje je potrebna izvrsna matematicko-logicka jedinica. <br>
         Efikasno razmisljanje razdvaja kodera or pravog programera.`;
+        mostpayed.innerHTML = 'Najplaceniji programski jezici';
         programminglanguage.innerHTML = 'Programski Jezik';
         salary.innerHTML = 'Plata';
         thinkingheader.innerHTML = 'Razmisljanje';

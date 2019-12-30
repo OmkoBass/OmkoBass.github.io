@@ -118,6 +118,7 @@ li a
 .selected li a
 {
     color: white !important;
+    border-bottom: 1px solid #B1560F;
 }
 .middle
 {

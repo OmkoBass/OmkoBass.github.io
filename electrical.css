@@ -21,11 +21,11 @@
     height: 11em;
     border-radius: 50%;
     background: #000040;
-    background: -moz-linear-gradient(left, #000040 10%, rgba(0,0,64, 0) 42%);
-    background: -webkit-linear-gradient(left, #000040 10%, rgba(0,0,64, 0) 42%);
-    background: -o-linear-gradient(left, #000040 10%, rgba(0,0,64, 0) 42%);
-    background: -ms-linear-gradient(left, #000040 10%, rgba(0,0,64, 0) 42%);
-    background: linear-gradient(to right, #000040 10%, rgba(0,0,64, 0) 42%);
+    background: -moz-linear-gradient(left, #0000f0 10%, rgba(0,0,64, 0) 42%);
+    background: -webkit-linear-gradient(left, #0000f0 10%, rgba(0,0,64, 0) 42%);
+    background: -o-linear-gradient(left, #0000f0 10%, rgba(0,0,64, 0) 42%);
+    background: -ms-linear-gradient(left, #0000f0 10%, rgba(0,0,64, 0) 42%);
+    background: linear-gradient(to right, #0000f0 10%, rgba(0,0,64, 0) 42%);
     position: relative;
     -webkit-animation: load3 1.4s infinite linear;
     animation: load3 1.4s infinite linear;
@@ -37,7 +37,7 @@
 {
     width: 50%;
     height: 50%;
-    background: #000040;
+    background: #0000f0;
     border-radius: 100% 0 0 0;
     position: absolute;
     top: 0;
@@ -118,6 +118,7 @@ nav a
 .selected li a
 {
     color: white !important;
+    border-bottom: 1px solid #0000f0;
 }
 .middle
 {

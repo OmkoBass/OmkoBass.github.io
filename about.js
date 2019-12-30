@@ -18,7 +18,7 @@ function changeLanguage()
         home.innerHTML = 'Home';
         who.innerHTML = 'Who am I?'
         dont.innerHTML = `Don't have a more normal <br> picture than this`;
-        ami.innerHTML = `I am Omer Batilovic. Software engineering student studying at the State University of Novi Pazar. <br>
+        ami.innerHTML = `I am Omer Batilović. Software engineering student studying at the State University of Novi Pazar. <br>
         I'm at the half-point of my studies and i absolutely love what i'm studying and doing. <br> 
         I have a black belt in programming, don't care for anything else.`;
         programming.innerHTML = 'Programming';
@@ -28,11 +28,11 @@ function changeLanguage()
     }
     else
     {
-        home.innerHTML = 'Pocetna';
+        home.innerHTML = 'Početna';
         who.innerHTML = 'Ko sam ja?'
         dont.innerHTML = `Nemam normalniju <br>sliku od ove.`;
-        ami.innerHTML = `Ja sam Omer Batilovic. Student softverskog inzenjerstva na Drzavnom Univerzitetu u Novom Pazaru. <br>
-        Druga sam godina osnovnih studija i ovo sto studiram i cime se bavim je moja najveca zelja. <br>
+        ami.innerHTML = `Ja sam Omer Batilović. Student softverskog inženjerstva na Državnom Univerzitetu u Novom Pazaru. <br>
+        Druga sam godina osnovnih studija i ovo što studiram i čime se bavim je moja najveća želja. <br>
         Imam crni pojas u programiranju, ostalo me ne interesuje.`;
         programming.innerHTML = 'Programiranje';
         other.innerHTML = 'Ostalo'

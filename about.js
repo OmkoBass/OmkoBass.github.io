@@ -60,7 +60,6 @@ setTimeout(() =>
 
     setTimeout(() => {
         language.style.pointerEvents = 'all';
-        language.classList.add('active');
         language.classList.remove('disabled');
     }, 2000);
 }, 6000);

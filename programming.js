@@ -67,36 +67,36 @@ function changeLanguage()
     }
     else
     {
-        home.innerHTML = 'Pocetna';
+        home.innerHTML = 'Početna';
         oet.innerHTML = 'Elektrotehnika';
         prog.innerHTML = 'Programiranje';
         mech.innerHTML = 'Mašinstvo';
         resources.innerHTML = 'Resursi';
         main.innerHTML = 'PROGRAMIRANJE';
-        toknowheader.innerHTML = 'Sta treba da znate';
-        toknowtext.innerHTML = `Za programiranje je potrebna izvrsna matematicko-logicka jedinica. <br>
+        toknowheader.innerHTML = 'Šta treba da znate';
+        toknowtext.innerHTML = `Za programiranje je potrebna izvrsna matematičko-logička jedinica. <br>
         Efikasno razmisljanje razdvaja kodera or pravog programera.`;
-        mostpayed.innerHTML = 'Najplaceniji programski jezici';
+        mostpayed.innerHTML = 'Najplaćeniji programski jezici';
         programminglanguage.innerHTML = 'Programski Jezik';
         salary.innerHTML = 'Plata';
-        thinkingheader.innerHTML = 'Razmisljanje';
-        thinkingtext.innerHTML = `Sve se vrti oko razmisljanja. Poznavanje sintakse i novih tehnologija je veliki plus ali bez poznavanja "low-level" stvari, bez efikasnosti, bez razumevanja funkcionisanja stvari programer je beskoristan i lako zamenljiv.`;
-        pointerheader.innerHTML = 'Pokazivaci su laki i intersantni';
-        pointertext.innerHTML = `Vecina ljudi pocinje sa programskim jezikom C, sto je i najbolje. <br>
-        C je "low-level" jezik, sto znaci da on nema dosta vec implementiranih stvari koje nam olaksavaju zivot. <br>
-        To zvuci lose al' nije ni malo. To znaci da mi mozemo sami da oblikujemo stvari kako je nama zgodno i da naucimo usput.`;
+        thinkingheader.innerHTML = 'Razmišljanje';
+        thinkingtext.innerHTML = `Sve se vrti oko razmišljanja. Poznavanje sintakse i novih tehnologija je veliki plus ali bez poznavanja "low-level" stvari, bez efikasnosti, bez razumevanja funkcionisanja koda programer je beskoristan i lako zamenljiv.`;
+        pointerheader.innerHTML = 'Pokazivači su laki i intersantni';
+        pointertext.innerHTML = `Većina ljudi počinje sa programskim jezikom C, što je i najbolje. <br>
+        C je "low-level" jezik, što znači da on nema dosta već implementiranih stvari koje nam olakšavaju život. <br>
+        To zvuči loše al' nije ni malo. To znači da mi možemo sami da oblikujemo stvari kako je nama zgodno i da naučimo usput.`;
         kingimg.innerHTML = 'Kralj svih jezika';
         importantpeople.innerHTML = 'Mnogo bitni ljudi';
-        ritchietext.innerHTML = `Americki naucnik koji je diplomirao fiziku i matematiku na Harvardu. Tvorac programskog jezika C i operativnog sistema UNIX. C je dan danas najbrzi programskih jezik a UNIX isto najbrzi operativni sistem. Legenda programerskog sveta.`;
-        linustext.innerHTML = `Softverski inzenjer iz Finske koji je stvorio Linux operativni sistem, najbolji operativni sistem danasnjice.`;
-        linuxwhy.innerHTML = 'Sto Linux?';
-        linuxp1.innerHTML = `Zato sto je open source, linux je totalno open source projekat sto znaci da mozete da radite sa njim sta hocete, menjate i gledate kako to radi. <br>
-        Mozete i da doprinesete Linux operativnom sistemu tako sto cete ga nadograditi.`;
-        linuxp2.innerHTML = `Zato sto je bezbedan. Windows je pun exploita koje ljudi koriste da vam ostete racunar. Svaki put dolaze prisilna azuriranja koja popravljaju neki novi exploit. <br>
+        ritchietext.innerHTML = `Američki naučnik koji je diplomirao fiziku i matematiku na Harvardu. Tvorac programskog jezika C i operativnog sistema UNIX. C je dan danas najbrži programskih jezik a UNIX isto najbrži operativni sistem. Legenda programerskog sveta.`;
+        linustext.innerHTML = `Softverski inženjer iz Finske koji je stvorio Linux operativni sistem, najbolji operativni sistem današnjice.`;
+        linuxwhy.innerHTML = 'Što Linux?';
+        linuxp1.innerHTML = `Zato što je open source, linux je totalno open source projekat što znači da možete da radite sa njim šta god hoćete, menjate i gledate kako to radi. <br>
+        Možete i da doprinesete Linux operativnom sistemu tako sto ćete ga nadograditi.`;
+        linuxp2.innerHTML = `Zato što je bezbedan. Windows je pun exploita koje ljudi koriste da vam oštete računar. Svaki put dolaze prisilna ažuriranja koja popravljaju neki novi exploit. <br>
         Linux nije otporan na apsolutno sve ali je MNOGO bezbedniji od Windowsa.`;
-        linuxp3.innerHTML = `Zato sto je brz. Linux moze stari racunar da ozivi toliko da se taj racunar ne prepoznaje, ne prisiljava vas ni na sta i ima izuzetno bolju privatnost.`;
-        linuxp4.innerHTML = `Zato sto je najbolji sistem za programere. Linux podrzva sve popularne i bitne programske jezike, na Linux-u nema problema oko nalazenja kompajlera i ostalog. <br>
-        Od prvog paljenja racunara mozete da pisete, kompajlate i pokrenete veliku vecinu jezika.`;
+        linuxp3.innerHTML = `Zato što je brz. Linux može stari računar da oživi toliko da se taj računar ne prepoznaje, ne prisiljava vas ni na šta i ima izuzetno bolju privatnost.`;
+        linuxp4.innerHTML = `Zato što je najbolji sistem za programere. Linux podržava sve popularne i bitne programske jezike, na Linux-u nema problema oko nalazenja kompajlera i ostalog. <br>
+        Od prvog paljenja računara možete da pišete, kompajlujete i pokrenete veliku većinu jezika.`;
 
         english = true;
     }

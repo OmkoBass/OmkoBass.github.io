@@ -51,34 +51,34 @@ function changeLanguage()
         phiheader.innerHTML = 'THE GOLDEN RATIO';
         phitext.innerHTML = `Two quantities are in their golden ratio if their sum divided by the first quantity is equal to the first one divided by the second. <br>
         Everything around us is in the golden ratio. <br>
-        The difference between our forearm and arm, our finger and hand, the entire nature is in that ratio, even the universe itself. `;
+        The difference between our forearm and arm, our finger and hand, the entire nature is in that ratio, even the universe itself.`;
 
         english = false;
     }
     else
     {
-        home.innerHTML = 'Pocetna';
+        home.innerHTML = 'Početna';
         oet.innerHTML = 'Elektrotehnika';
         prog.innerHTML = 'Programiranje';
         mech.innerHTML = 'Mašinstvo';
         resources.innerHTML = 'Resursi';
-        main.innerHTML = 'MASINSTVO';
-        geartextt.innerHTML = `Mehanika nam omogucava stvari kao sto su sa ovog gif-a da imamo u pravom zivotu. Kad gledamo zupcanike u satu vidimo koliko je kompleksna i precizna stvar a masinstvo nam daje mnogo mnogo vise od toga. Bez nje ne bi smo imali: Bilo kakave motore, Tockove, Vetrenjace, Naslonce za vucu, Brodove, Stampanje, Hidrauliku i mnogo drugi stvari.`;
-        moveGears.innerHTML = `Klikni mene da pokrenes zupcanike!`;
+        main.innerHTML = 'MAŠINSTVO';
+        geartextt.innerHTML = `Mašinstvo nam omogućava stvari kao što su sa ovog gif-a da imamo u pravom životu. Kad gledamo zupčanike u satu vidimo koliko je kompleksna i precizna stvar a mašinstvo nam daje mnogo mnogo više od toga. Bez mašinstva ne bi smo imali: Bilo kakave motore, Točkove, Vetrenjače, Naslonce za vuču, Brodove, Štampanje, Hidrauliku i mnogo drugih stvari.`;
+        moveGears.innerHTML = `Klikni mene da pokreneš zupčanike!`;
         toknowheader.innerHTML = `Sta treba da znate`;
-        toknowtext.innerHTML = `Vrlo moguce da je masinstvo najteza grana inzenjerstva u kojoj se samo ulazi sa izvanrednim predznanjem u poljima fizike i matematike.`;
-        wisdomwords.innerHTML = `Reci mudrosti`;
-        wisdomexplenation.innerHTML = `Mudre reci mudrih formula`;
+        toknowtext.innerHTML = `Vrlo je moguće da je mašinstvo najteža grana inženjerstva u kojoj se samo ulazi sa izvanrednim predznanjem u poljima fizike i matematike.`;
+        wisdomwords.innerHTML = `Reči mudrosti`;
+        wisdomexplenation.innerHTML = `Mudre reči mudrih formula`;
         halloffame.innerHTML = 'DVORANA SLAVNIH';
-        tesla.innerHTML = 'Najveci um svih vremena';
-        kitaw.innerHTML = 'Inzenjer iz Etiopije koji je izmislio GPS dok je radio u NASI.';
-        watt.innerHTML = 'Skocki izumitelj koji je izmislio modernu parnu masinu, rotor masinu i kopiranje.';
+        tesla.innerHTML = 'Najveći um svih vremena';
+        kitaw.innerHTML = 'Inženjer iz Etiopije koji je izmislio GPS dok je radio u NASI.';
+        watt.innerHTML = 'Škocki izumitelj koji je izmislio modernu parnu mašinu, rotor mašinu i kopiranje.';
         george.innerHTML = `Britanski izumitelj koji je napravio prvi sistem pruga unutar grada.`;
         manymore.innerHTML = 'I MNOGI DRUGI...';
         phiheader.innerHTML = 'ZLATNI PRESEK';
-        phitext.innerHTML = `Dve velicine su zlatnom odnosu ako je zbir te dve velicine kroz prvu jednak prva velicina kroz drugu. <br>
+        phitext.innerHTML = `Dve veličine su u zlatnom odnosu ako je zbir te dve veličine kroz prvu jednak prva veličina kroz drugu. <br>
         Sve oko nas je u zlatnom odnosu. <br> 
-        Razlika nase podlaktice i ruke, prsta i sake, cela priroda je u tom odnosu pa cak i sam univerzum.`;
+        Razlika naše podlaktice i ruke, prsta i šake, cela priroda je u tom odnosu pa čak i sam univerzum.`;
 
         english = true;
     }
@@ -104,7 +104,7 @@ function startStop()
     {
         Gears.src = '/Images/Mechanical/clockworkimg.png';
         if(english)
-            moveGears.innerHTML = 'Klikni mene da pokrenes zupcanike!';
+            moveGears.innerHTML = 'Klikni mene da pokreneš zupčanike!';
         else
             moveGears.innerHTML = 'Click me to start the gears!';
         gearsMoving = false;
@@ -113,7 +113,7 @@ function startStop()
     {
         Gears.src = '/Images/Mechanical/clockwork.gif';
         if(english)
-            moveGears.innerHTML = 'Klikni mene da zaustavis zupcanike!';
+            moveGears.innerHTML = 'Klikni mene da zaustaviš zupčanike!';
         else
             moveGears.innerHTML = 'Click me to stop the gears!';
         gearsMoving = true;

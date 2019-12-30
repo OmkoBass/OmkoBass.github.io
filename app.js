@@ -19,6 +19,10 @@ let message = document.getElementById('message');
 let validmessage = document.getElementById('validmessage');
 let successful = document.getElementById('successful');
 
+
+let email = document.getElementById('email');
+let text = document.getElementById('text');
+
 let english = true;
 
 function appear()
@@ -51,9 +55,6 @@ function appear()
 
 function validate()
 {
-    const email = document.getElementById('email');
-    const text = document.getElementById('text');
-
     let error = document.querySelector('.error');
     let success = document.querySelector('.success');
     let texterror = document.querySelector('.texterror')
@@ -94,9 +95,6 @@ function validate()
 
 function changeLanguage()
 {   
-    email = document.getElementById('email');
-    text = document.getElementById('text');
-
     if(english)
     {
         oet.innerHTML = 'Electrical Engineering';
@@ -105,8 +103,8 @@ function changeLanguage()
         about.innerHTML = 'About me';
         main.innerHTML = 'THE MOST IMPORTANT BRANCHES OF SCIENCE';
         smart.innerHTML = 'Smart';
-        desc1.innerHTML = `Engineering is not for everyone which means that only the best and the most hard working people with a quality mathemathical-logical unit can be succesfull. <br> 
-        That type of intelligence has pushed the civilization forward and these three branches of science: Electrical Enginnering, Programming and Mechanical Engineering will continue to strive for that goal.`
+        desc1.innerHTML = `Engineering is not for everyone which means that only the best and the most hard working people with a quality mathematical-logical unit can be succesful. <br> 
+        That type of intelligence has pushed the civilization forward and these three branches of science: Electrical Engineering, Programming and Mechanical Engineering will continue to strive for that goal.`
         efficient.innerHTML = 'Efficient';
         desc2.innerHTML = `We strive for an ideal world that gives us the best possible performances for the leats ammount of resources spent. And we are slowly getting there every day.<br>
         Today we can do that, we can be efficient and let machines do the easy and boring stuff that is constantly being repeated. <br>
@@ -140,7 +138,7 @@ function changeLanguage()
         Danas mi to možemo da uradimo, možemo da budemo efikasni i da pustimo mašine da rade lake i dosadne stvari koje se konstantno ponavljaju. <br>
         Baš te mašine moraju biti isprogramirane da bi radile, da prepoznaju ponavljanja i putanju i baš za to nam služi programiranje.`;
         useful.innerHTML = 'Korisno';
-        desc3.innerHTML = `Sve to radimo iz dva razloga. Da nam poboljša kvalitet života i učini stvari lakšim. Bez inženjerstva nikad ne bi smo dosli do luksuza koje imamo danas.<br>   
+        desc3.innerHTML = `Sve to radimo iz dva razloga. Da nam poboljša kvalitet života i učini stvari lakšim. Bez inženjerstva nikad ne bi smo došli do luksuza koje imamo danas.<br>   
         Današnje stvari koje gledamo kao "Ništa posebno" bi čoveku pre 100 godina bile prava magija.`;
         contactus.innerHTML ='Kontaktirajte nas!';
         youremail.innerHTML = 'Vaš e-mail:';
@@ -150,7 +148,7 @@ function changeLanguage()
         send.innerHTML = 'Pošalji';
         successful.innerHTML = 'Ušpesno!';
         email.placeholder = 'neko@email.com';
-        text.placeholder = 'Svidja mi se stranica!';
+        text.placeholder = 'Sviđa mi se stranica!';
         english = true;
     }
 }

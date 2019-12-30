@@ -115,6 +115,10 @@ li a
     justify-content: space-around;
     flex-basis: 100%;
 }
+.selected li a
+{
+    color: white !important;
+}
 .middle
 {
     height: 90vh;

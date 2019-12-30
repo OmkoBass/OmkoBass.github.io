@@ -1,6 +1,9 @@
 const language = document.getElementById('language');
 
 let home = document.getElementById('home');
+let oet = document.getElementById('oet');
+let prog = document.getElementById('prog');
+let mech = document.getElementById('mech');
 let resources = document.getElementById('resources');
 let main = document.getElementById('main');
 let toknowheader = document.getElementById('toknowheader');
@@ -30,6 +33,9 @@ function changeLanguage()
     if(english)
     {
         home.innerHTML = 'Home';
+        oet.innerHTML = 'Electrical Engineering';
+        prog.innerHTML = 'Programming';
+        mech.innerHTML = 'Mechanical Engineering';
         resources.innerHTML = 'Resources';
         main.innerHTML = 'PROGRAMMING';
         toknowheader.innerHTML = 'What you need to know';
@@ -62,6 +68,9 @@ function changeLanguage()
     else
     {
         home.innerHTML = 'Pocetna';
+        oet.innerHTML = 'Elektrotehnika';
+        prog.innerHTML = 'Programiranje';
+        mech.innerHTML = 'Mašinstvo';
         resources.innerHTML = 'Resursi';
         main.innerHTML = 'PROGRAMIRANJE';
         toknowheader.innerHTML = 'Sta treba da znate';

@@ -4,6 +4,9 @@ const moveGears = document.getElementById('moveGears');
 let gearsMoving = false;
 
 let home = document.getElementById('home');
+let oet = document.getElementById('oet');
+let prog = document.getElementById('prog');
+let mech = document.getElementById('mech');
 let resources = document.getElementById('resources');
 let main = document.getElementById('main');
 let geartextt = document.getElementById('geartextt');
@@ -28,6 +31,9 @@ function changeLanguage()
     if(english)
     {
         home.innerHTML = 'Home';
+        oet.innerHTML = 'Electrical Engineering';
+        prog.innerHTML = 'Programming';
+        mech.innerHTML = 'Mechanical Engineering';
         resources.innerHTML = 'Resources';
         main.innerHTML = 'MECHANICAL ENGINEERING';
         geartextt.innerHTML = `Mechanical Engineering allows us things in real life from this gif. When we look at the gears inside of a clock we can see the immense complexity and mechanical engineering gives us way more than that. Without this kind of engineering we would have any Motors, Wheels, Windmills, Pulling contraptions, Ships, Copying, Hydraulics and many many more things.`;
@@ -52,6 +58,9 @@ function changeLanguage()
     else
     {
         home.innerHTML = 'Pocetna';
+        oet.innerHTML = 'Elektrotehnika';
+        prog.innerHTML = 'Programiranje';
+        mech.innerHTML = 'Mašinstvo';
         resources.innerHTML = 'Resursi';
         main.innerHTML = 'MASINSTVO';
         geartextt.innerHTML = `Mehanika nam omogucava stvari kao sto su sa ovog gif-a da imamo u pravom zivotu. Kad gledamo zupcanike u satu vidimo koliko je kompleksna i precizna stvar a masinstvo nam daje mnogo mnogo vise od toga. Bez nje ne bi smo imali: Bilo kakave motore, Tockove, Vetrenjace, Naslonce za vucu, Brodove, Stampanje, Hidrauliku i mnogo drugi stvari.`;

@@ -115,6 +115,10 @@ li a
     justify-content: space-around;
     flex-basis: 100%;
 }
+.selected li a
+{
+    color: white !important;
+}
 .middle
 {
     background: url(Images/Mechanical/background.jpg); 
@@ -241,13 +245,15 @@ li a
 {
     margin-top: 2em;
 }
-.phi img
+.phiimg
+{
+    background-color: black;
+}
+.phiimg img
 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: auto;
-    height: auto;
 }
 footer
 {
@@ -266,5 +272,9 @@ footer
     .engineer
     {
         width: 100%;
+    }
+    .phiimg img
+    {
+        width: 80%;
     }
 }

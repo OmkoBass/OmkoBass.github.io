@@ -5,7 +5,7 @@
 }
 .overflowadded
 {
-    overflow: auto !important;
+    overflow-y: auto !important;
 }
 .loader 
 {
@@ -237,6 +237,34 @@ nav a
     margin-top: 2em;
     grid-column: 2/3;
 }
+.emailpopup
+{
+    margin-top: 1em;
+    opacity: 0;
+    background-color: white;
+    color: black;
+    text-align: center;
+    transition: 0.3s all ease-in-out;
+    border-radius: 1em;
+}
+.emailpopup p
+{
+    padding: 4px;
+}
+.textpopup
+{
+    margin-top: 1em;
+    opacity: 0;
+    background-color: white;
+    color: black;
+    text-align: center;
+    transition: 0.3s all ease-in-out;
+    border-radius: 1em;
+}
+.textpopup p
+{
+    padding: 4px;
+}
 .error
 {
     opacity: 0;
@@ -244,6 +272,7 @@ nav a
     color: red;
     font-size: 16px;
     transition: 0.3s ease-in-out all;
+    pointer-events: none;
 }
 .success
 {
@@ -253,6 +282,7 @@ nav a
     color: green;
     font-size: 16px;
     transition: 0.3s ease-in-out all;
+    pointer-events: none;
 }
 .texterror
 {
@@ -261,6 +291,7 @@ nav a
     color: red;
     font-size: 16px;
     transition: 0.3s ease-in-out all;
+    pointer-events: none;
 }
 footer
 {
@@ -269,17 +300,12 @@ footer
     padding: 25px;
     text-align: center;
 }
-@media only screen and (max-width: 615px) 
+@media only screen and (max-width: 1000px) 
 {
-    body
-    {
-        overflow-x: hidden;
-    }
     .electrical
     {
         flex-direction: column;
         text-align: center;
-        margin: 6em 0em 6em 0em;
     }
     .electrical-text
     {
@@ -288,15 +314,14 @@ footer
     }
     .electrical img
     {
-        transform: translateX(-80px);
-        height: 20em;
-        width: 20em;
+        width: 35em;
+        margin-left: auto;
+        margin-right: auto;
     }
     .programming
     {
         flex-direction: column-reverse;
         text-align: center;
-        margin: 6em 0em 6em 0em;
     }
     .programming-text
     {
@@ -306,15 +331,14 @@ footer
     }
     .programming img
     {
-        transform: translateX(-80px);
-        height: 20em;
-        width: 20em;
+        width: 35em;
+        margin-left: auto;
+        margin-right: auto;
     }
     .mechanical
     {
         flex-direction: column;
         text-align: center;
-        margin: 6em 0em 0em 0em;
     }
     .mechanical-text
     {
@@ -323,9 +347,9 @@ footer
     }
     .mechanical img
     {
-        transform: translateX(-80px);
-        height: 20em;
-        width: 20em;
+        width: 35em;
+        margin-left: auto;
+        margin-right: auto;
     }
     .quote img
     {
@@ -336,4 +360,20 @@ footer
         display: flex;
         flex-direction: column;
     }
-}  
+}
+
+@media only screen and (max-width: 720px)
+{
+    .electrical img
+    {
+        width: 20em;
+    }
+    .programming img
+    {
+        width: 20em;
+    }
+    .mechanical img
+    {
+        width: 20em;
+    }
+}

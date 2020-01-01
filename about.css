@@ -36,6 +36,11 @@ li a
 {
     width: 45%;
 }
+.mailme
+{
+    color: white;
+    text-decoration: underline;
+}
 .normal
 {
     position: absolute;

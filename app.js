@@ -90,6 +90,14 @@ function validate()
         {
             error.style.opacity = 0;
         }, 3000);
+        if(text.value == '')
+        {
+            texterror.style.opacity = 1;
+            setTimeout(fade = () =>
+            {
+                texterror.style.opacity = 0;
+            }, 3000);
+        }
     }
 }
 
@@ -152,6 +160,36 @@ function changeLanguage()
         english = true;
     }
 }
+
+email.addEventListener('focus', () => {
+    let emailpopup = document.querySelector('.emailpopup');
+    if(!english)
+        document.getElementById('emaildetails').innerHTML = 'Please enter a valid email address.';
+    else
+        document.getElementById('emaildetails').innerHTML = 'Unesite validan e-mail.';
+
+    emailpopup.style.opacity = 1;
+});
+
+email.addEventListener('blur', () => {
+    let emailpopup = document.querySelector('.emailpopup');
+    emailpopup.style.opacity = 0;
+});
+
+text.addEventListener('focus', () => {
+    let textpopup = document.querySelector('.textpopup');
+    if(!english)
+        document.getElementById('textdetails').innerHTML = 'Send us a message!';
+    else
+        document.getElementById('textdetails').innerHTML = 'Pošaljite nam poruku!.';
+
+    textpopup.style.opacity = 1;
+});
+
+text.addEventListener('blur', () => {
+    let textpopup = document.querySelector('.textpopup');
+    textpopup.style.opacity = 0;
+});
 
 window.addEventListener('load', () => {
     scroll(0,0);

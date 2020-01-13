@@ -99,10 +99,6 @@ body
     background-color: black;
     overflow-x: hidden;
 }
-nav
-{
-    background-color: black;
-}
 nav a:hover
 {
     font-size: 22px;
@@ -217,8 +213,8 @@ nav a
 }
 .contact
 {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     color: white;
     background: black;
@@ -237,33 +233,23 @@ nav a
     margin-top: 2em;
     grid-column: 2/3;
 }
-.emailpopup
+.popup
 {
-    margin-top: 1em;
-    opacity: 0;
     background-color: white;
     color: black;
-    text-align: center;
-    transition: 0.3s all ease-in-out;
-    border-radius: 1em;
-}
-.emailpopup p
-{
-    padding: 4px;
-}
-.textpopup
-{
-    margin-top: 1em;
+    border-radius: 2em;
+    width: 30%;
     opacity: 0;
-    background-color: white;
-    color: black;
-    text-align: center;
     transition: 0.3s all ease-in-out;
-    border-radius: 1em;
 }
-.textpopup p
+.popup p
 {
-    padding: 4px;
+    transform: translateY(5px);
+    text-align: center;
+}
+.popup-appear
+{
+    opacity: 1 !important;
 }
 .error
 {
@@ -280,15 +266,6 @@ nav a
     opacity: 0;
     grid-column: 2/3;
     color: green;
-    font-size: 16px;
-    transition: 0.3s ease-in-out all;
-    pointer-events: none;
-}
-.texterror
-{
-    opacity: 0;
-    grid-column: 2/3;
-    color: red;
     font-size: 16px;
     transition: 0.3s ease-in-out all;
     pointer-events: none;

@@ -13,15 +13,18 @@ let desc2 = document.getElementById('desc2');
 let useful = document.getElementById('useful');
 let desc3 = document.getElementById('desc3');
 let contactus = document.getElementById('contactus');
+let yourname = document.getElementById('yourname');
+let yourlastname = document.getElementById('yourlastname');
 let youremail = document.getElementById('youremail');
-let validemail = document.getElementById('validemail');
 let message = document.getElementById('message');
-let validmessage = document.getElementById('validmessage');
 let successful = document.getElementById('successful');
 
-
+let name = document.getElementById('name');
+let lastname = document.getElementById('lastname');
 let email = document.getElementById('email');
 let text = document.getElementById('text');
+
+let popup = document.querySelectorAll('.popup');
 
 let english = true;
 
@@ -121,12 +124,13 @@ function changeLanguage()
         desc3.innerHTML = `Everything that we do, we do for two reason. To improve out quality of life and make things easier for us. Without engineering we would never reach the luxuries we have today. <br>
         Stuff today the we view as "Nothing special" a man 100 years before us would thing it's magic.`;
         contactus.innerHTML ='Contact us!';
+        yourname.innerHTML = 'Your name:';
+        yourlastname.innerHTML = 'Your last name:';
         youremail.innerHTML = 'Your e-mail:';
-        validemail.innerHTML = 'Enter a valid e-mail;'
         message.innerHTML = 'Your message:';
-        validmessage.innerHTML = 'Enter a valid message';
         send.innerHTML = 'Send';
-        successful.innerHTML = 'Success!';
+        name.placeholder = 'Jack';
+        lastname.placeholder = 'Walker';
         email.placeholder = 'someone@email.com';
         text.placeholder = 'Love the page!';
         english = false;
@@ -149,47 +153,21 @@ function changeLanguage()
         desc3.innerHTML = `Sve to radimo iz dva razloga. Da nam poboljša kvalitet života i učini stvari lakšim. Bez inženjerstva nikad ne bi smo došli do luksuza koje imamo danas.<br>   
         Današnje stvari koje gledamo kao "Ništa posebno" bi čoveku pre 100 godina bile prava magija.`;
         contactus.innerHTML ='Kontaktirajte nas!';
+        yourname.innerHTML = 'Vaše ime:';
+        yourlastname.innerHTML = 'Vaše prezime:';
         youremail.innerHTML = 'Vaš e-mail:';
-        validemail.innerHTML = 'Unesite validan e-mail';
         message.innerHTML = 'Vaša poruka:';
-        validmessage.innerHTML = 'Unesite validnu poruku.';
         send.innerHTML = 'Pošalji';
-        successful.innerHTML = 'Ušpesno!';
+        name.placeholder = 'Neko';
+        lastname.placeholder = 'Nekić';
         email.placeholder = 'neko@email.com';
         text.placeholder = 'Sviđa mi se stranica!';
         english = true;
     }
 }
 
-email.addEventListener('focus', () => {
-    let emailpopup = document.querySelector('.emailpopup');
-    if(!english)
-        document.getElementById('emaildetails').innerHTML = 'Please enter a valid email address.';
-    else
-        document.getElementById('emaildetails').innerHTML = 'Unesite validan e-mail.';
-
-    emailpopup.style.opacity = 1;
-});
-
-email.addEventListener('blur', () => {
-    let emailpopup = document.querySelector('.emailpopup');
-    emailpopup.style.opacity = 0;
-});
-
-text.addEventListener('focus', () => {
-    let textpopup = document.querySelector('.textpopup');
-    if(!english)
-        document.getElementById('textdetails').innerHTML = 'Send us a message!';
-    else
-        document.getElementById('textdetails').innerHTML = 'Pošaljite nam poruku!.';
-
-    textpopup.style.opacity = 1;
-});
-
-text.addEventListener('blur', () => {
-    let textpopup = document.querySelector('.textpopup');
-    textpopup.style.opacity = 0;
-});
+email.addEventListener('click', () => {
+})
 
 window.addEventListener('load', () => {
     scroll(0,0);

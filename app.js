@@ -24,7 +24,7 @@ let lastname = document.getElementById('lastname');
 let email = document.getElementById('email');
 let text = document.getElementById('text');
 
-let popup = document.querySelectorAll('.popup');
+let popup = document.querySelector('.popup');
 
 let english = true;
 
@@ -167,6 +167,11 @@ function changeLanguage()
 }
 
 email.addEventListener('click', () => {
+    popup.classList.add('popup-appear');
+    if(english)
+        popup.children[0].innerHTML = 'Enter a valid email';
+    else
+        popup.children[0].innerHTML = 'Unesite validan email';
 })
 
 window.addEventListener('load', () => {

@@ -65,7 +65,6 @@ function validate()
 {
     let error = document.querySelector('.error');
     let success = document.querySelector('.success');
-    let texterror = document.querySelector('.texterror')
 
     const emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 

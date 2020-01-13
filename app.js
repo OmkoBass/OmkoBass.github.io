@@ -24,6 +24,11 @@ let lastname = document.getElementById('lastname');
 let email = document.getElementById('email');
 let text = document.getElementById('text');
 
+let nameinput = document.querySelector('.nameinput');
+let lastnameinput = document.querySelector('.lastnameinput');
+let emailinput = document.querySelector('.emailinput');
+let textinput = document.querySelector('.textinput');
+
 let popup = document.querySelector('.popup');
 
 let english = true;
@@ -166,13 +171,58 @@ function changeLanguage()
     }
 }
 
+name.addEventListener('click', () => {
+    nameinput.appendChild(popup);
+    popup.classList.add('popup-appear');
+    if(english)
+        popup.children[0].innerHTML = 'Enter a valid name';
+    else
+        popup.children[0].innerHTML = 'Unesite validno ime';
+});
+
+name.addEventListener('blur', () => {
+    popup.classList.remove('popup-appear');
+});
+
+lastname.addEventListener('click', () => {
+    lastnameinput.appendChild(popup);
+    popup.classList.add('popup-appear');
+    if(english)
+        popup.children[0].innerHTML = 'Enter a valid lastname';
+    else
+        popup.children[0].innerHTML = 'Unesite validno prezime';
+});
+
+lastname.addEventListener('blur', () => {
+    popup.classList.remove('popup-appear');
+});
+
+
 email.addEventListener('click', () => {
+    emailinput.appendChild(popup);
     popup.classList.add('popup-appear');
     if(english)
         popup.children[0].innerHTML = 'Enter a valid email';
     else
         popup.children[0].innerHTML = 'Unesite validan email';
-})
+});
+
+email.addEventListener('blur', () => {
+    popup.classList.remove('popup-appear');
+});
+
+text.addEventListener('click', () => {
+    textinput.appendChild(popup);
+    popup.classList.add('popup-appear');
+    if(english)
+        popup.children[0].innerHTML = 'Enter a valid message';
+    else
+        popup.children[0].innerHTML = 'Unesite validnu poruku';
+});
+
+text.addEventListener('blur', () => {
+    popup.classList.remove('popup-appear');
+});
 
 window.addEventListener('load', () => {
     scroll(0,0);

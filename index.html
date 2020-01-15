@@ -70,33 +70,39 @@
         <h1 style="color: white; text-align: center; border-top: solid white 1px; margin: 2em 2em 0em 2em;" id="contactus"></h1>
         <div class="container">
             <div class="contact">
-                <div class="nameinput">
-                    <label id="yourname"></label>
-                    <input type="text" class="form-control" id="name">
+                <div class="fullname">
+                    <label id="yourfullname"></label>
+                    <input type="text" class="n form-control" id="fullnameinput" data-toggle="tooltip" title="" data-placement="right">
                 </div>
-                <div class="lastnameinput">
-                    <label id="yourlastname"></label>
-                    <input type="text" class="form-control" id="lastname">
+                <div class="error">
+                    <p id="nameerror"></p>
                 </div>
-                <div class="emailinput">
-                    <Label id="youremail"></Label>
-                    <input type="email" class="form-control" id="email"></input>
+                <div class="email">
+                    <label id="youremail"></label>
+                    <input type="email" class="e form-control" id="emailinput" data-toggle="tooltip" title="" data-placement="right">
                 </div>
-                <div class="textinput">
-                    <Label id="message"></Label>
-                    <input type="textarea" class="form-control" id="text"></input>
+                <div class="error">
+                    <p id="emailerror"></p>
+                </div>
+                <div class="message">
+                    <label id="yourmessage"></label>
+                    <textarea class="m form-control" rows="5" id="messageinput" data-toggle="tooltip" title="" data-placement="right"></textarea>
+                </div>
+                <div class="error">
+                    <p id="messageerror"></p>
+                </div>
+                <div class="success">
+                    <p id="successtext"></p>
                 </div>
                 <button id="send" class="btn btn-light"></button>
             </div>
         </div>
-        <div class="popup">
-            <p>test</p>
-        </div>
         <footer>
             <p>Copyright @OmkoBass</p>
         </footer> 
-        <script type="text/javascript" src="app.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.0.4/popper.js"></script>
         <script type="text/javascript" src="bootstrap/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="app.js"></script>
         <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
     </body>
 </html>

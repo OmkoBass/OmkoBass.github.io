@@ -228,42 +228,37 @@ nav a
 {
     margin-top: 2em;
 }
-.popup
+.message
 {
-    background-color: white;
-    color: black;
-    border-radius: 0.5em;
-    opacity: 0;
-    transition: 0.3s all ease-in-out;
     margin: 1em;
 }
-.popup p
+.error p
 {
-    transform: translateY(5px);
+    opacity: 0;
+    margin: 1em;
+    color: red;
+    font-size: 16px;
+    pointer-events: none;
     text-align: center;
+    transition: 0.3s ease-in-out all;
 }
-.popup-appear
+.error-appear
 {
     opacity: 1 !important;
 }
-.error
+.success p
 {
     opacity: 0;
-    grid-column: 2/3;
-    color: red;
-    font-size: 16px;
-    transition: 0.3s ease-in-out all;
-    pointer-events: none;
-}
-.success
-{
-    margin-top: 2em;
-    opacity: 0;
-    grid-column: 2/3;
+    margin: 1em;
     color: green;
     font-size: 16px;
     transition: 0.3s ease-in-out all;
     pointer-events: none;
+    text-align: center;
+}
+.success-appear
+{
+    opacity: 1 !important;
 }
 footer
 {

@@ -1,6 +1,7 @@
 const send = document.getElementById('send');
 const language = document.getElementById('language');
 
+//Text
 let oet = document.getElementById('oet');
 let prog = document.getElementById('prog');
 let mech = document.getElementById('mech');
@@ -13,23 +14,33 @@ let desc2 = document.getElementById('desc2');
 let useful = document.getElementById('useful');
 let desc3 = document.getElementById('desc3');
 let contactus = document.getElementById('contactus');
-let yourname = document.getElementById('yourname');
-let yourlastname = document.getElementById('yourlastname');
+let yourfullname = document.getElementById('yourfullname');
 let youremail = document.getElementById('youremail');
-let message = document.getElementById('message');
+let yourmessage = document.getElementById('yourmessage');
 let successful = document.getElementById('successful');
 
-let name = document.getElementById('name');
-let lastname = document.getElementById('lastname');
-let email = document.getElementById('email');
-let text = document.getElementById('text');
+//Labels
+let fullname = document.querySelector('.fullname');
+let email = document.querySelector('.email');
+let message = document.querySelector('.message');
 
-let nameinput = document.querySelector('.nameinput');
-let lastnameinput = document.querySelector('.lastnameinput');
-let emailinput = document.querySelector('.emailinput');
-let textinput = document.querySelector('.textinput');
+//Inputs
+let fullnameinput = document.getElementById('fullnameinput');
+let emailinput = document.getElementById('emailinput');
+let messageinput = document.getElementById('messageinput');
 
-let popup = document.querySelector('.popup');
+//Regex patterns
+const fullnameinputpattern = /^[A-Z]{1}[a-z]{1,}\s{1}[A-Z]{1}[a-z]{1,}$/;
+const emailinputpattern = /^$/;
+const messageinputpattern = /^([a-zA-Z0-9.]{1,255})$/;
+
+//Erros
+let nameerror = document.getElementById('nameerror');
+let emailerror = document.getElementById('emailerror');
+let messageerror = document.getElementById('messageerror');
+
+//Success
+let successText = document.getElementById('successtext');
 
 let english = true;
 
@@ -61,53 +72,6 @@ function appear()
         mechanicalText.classList.remove('appear');
 }
 
-function validate()
-{
-    let error = document.querySelector('.error');
-    let success = document.querySelector('.success');
-
-    const emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-
-    if(emailPattern.test(email.value))
-    {
-        if(text.value != '')
-        {
-            success.style.opacity = 1;
-            setTimeout(fade = () =>
-            {
-                success.style.opacity = 0;
-            }, 3000);
-
-            email.value = '';
-            text.value = '';
-        }
-        else
-        {
-            texterror.style.opacity = 1;
-            setTimeout(fade = () =>
-            {
-                texterror.style.opacity = 0;
-            }, 3000);
-        }
-    }
-    else
-    {
-        error.style.opacity = 1;
-        setTimeout(fade = () =>
-        {
-            error.style.opacity = 0;
-        }, 3000);
-        if(text.value == '')
-        {
-            texterror.style.opacity = 1;
-            setTimeout(fade = () =>
-            {
-                texterror.style.opacity = 0;
-            }, 3000);
-        }
-    }
-}
-
 function changeLanguage()
 {   
     if(english)
@@ -128,15 +92,15 @@ function changeLanguage()
         desc3.innerHTML = `Everything that we do, we do for two reason. To improve out quality of life and make things easier for us. Without engineering we would never reach the luxuries we have today. <br>
         Stuff today the we view as "Nothing special" a man 100 years before us would thing it's magic.`;
         contactus.innerHTML ='Contact us!';
-        yourname.innerHTML = 'Your name:';
-        yourlastname.innerHTML = 'Your last name:';
-        youremail.innerHTML = 'Your e-mail:';
-        message.innerHTML = 'Your message:';
+        yourfullname.innerHTML = 'Your full name:';
+        youremail.innerHTML = 'Your email:';
+        yourmessage.innerHTML = 'Your message:';
         send.innerHTML = 'Send';
-        name.placeholder = 'Jack';
-        lastname.placeholder = 'Walker';
-        email.placeholder = 'someone@email.com';
-        text.placeholder = 'Love the page!';
+        //errors
+        nameerror.innerHTML = 'Bad name.';
+        emailerror.innerHTML = 'Bad email.';
+        messageerror.innerHTML = 'Bad message.';
+        successText = 'Success!';
         english = false;
     }
     else
@@ -157,71 +121,110 @@ function changeLanguage()
         desc3.innerHTML = `Sve to radimo iz dva razloga. Da nam poboljša kvalitet života i učini stvari lakšim. Bez inženjerstva nikad ne bi smo došli do luksuza koje imamo danas.<br>   
         Današnje stvari koje gledamo kao "Ništa posebno" bi čoveku pre 100 godina bile prava magija.`;
         contactus.innerHTML ='Kontaktirajte nas!';
-        yourname.innerHTML = 'Vaše ime:';
-        yourlastname.innerHTML = 'Vaše prezime:';
+        yourfullname.innerHTML = 'Vaše puno ime:';
         youremail.innerHTML = 'Vaš e-mail:';
-        message.innerHTML = 'Vaša poruka:';
+        yourmessage.innerHTML = 'Vaša poruka:';
         send.innerHTML = 'Pošalji';
-        name.placeholder = 'Neko';
-        lastname.placeholder = 'Nekić';
-        email.placeholder = 'neko@email.com';
-        text.placeholder = 'Sviđa mi se stranica!';
+        //errors
+        nameerror.innerHTML = 'Loše ime.';
+        emailerror.innerHTML = 'Loš email.';
+        messageerror.innerHTML = 'Loša poruka.';
+        successText = 'Uspešno!';
         english = true;
     }
 }
 
-name.addEventListener('click', () => {
-    nameinput.appendChild(popup);
-    popup.classList.add('popup-appear');
-    if(english)
-        popup.children[0].innerHTML = 'Enter a valid name';
+//Full name tooltip, have to trigger it this way
+fullnameinput.addEventListener('click', () => {
+    if(!english)
+    {
+        $(document).ready(function(){
+            $('.n').tooltip({title: "First letters must be capital case."}); 
+        });
+    }
     else
-        popup.children[0].innerHTML = 'Unesite validno ime';
+    {
+        $(document).ready(function(){
+            $('.n').tooltip({title: "Prva slova moraju biti velika."}); 
+        });
+    }
 });
 
-name.addEventListener('blur', () => {
-    popup.classList.remove('popup-appear');
-});
-
-lastname.addEventListener('click', () => {
-    lastnameinput.appendChild(popup);
-    popup.classList.add('popup-appear');
-    if(english)
-        popup.children[0].innerHTML = 'Enter a valid lastname';
+//Email tooltip, have to trigger it this way
+emailinput.addEventListener('click', () => {
+    if(!english)
+    {
+        $(document).ready(function(){
+            $('.e').tooltip({title: "Email can start with anything, maximum 5 numbers and 3 symbols in a sequence."}); 
+        });
+    }
     else
-        popup.children[0].innerHTML = 'Unesite validno prezime';
+    {
+        $(document).ready(function(){
+            $('.e').tooltip({title: "Email moze da pocne bilo kako. Maksimalno 5 uzastopnih slova i 3 simbola."}); 
+        });
+    }
 });
 
-lastname.addEventListener('blur', () => {
-    popup.classList.remove('popup-appear');
-});
-
-
-email.addEventListener('click', () => {
-    emailinput.appendChild(popup);
-    popup.classList.add('popup-appear');
-    if(english)
-        popup.children[0].innerHTML = 'Enter a valid email';
+//Message tooltip, have to trigger it this way
+messageinput.addEventListener('click', () => {
+    if(!english)
+    {
+        $(document).ready(function(){
+            $('.m').tooltip({title: "Maximum 255 letters."}); 
+        });
+    }
     else
-        popup.children[0].innerHTML = 'Unesite validan email';
+    {
+        $(document).ready(function(){
+            $('.m').tooltip({title: "Maksimum 255 slova."}); 
+        });
+    }
 });
 
-email.addEventListener('blur', () => {
-    popup.classList.remove('popup-appear');
-});
+function validate()
+{
+    let fullNameValid = false;
+    let emailValid = false;
+    let messageValid = false;
 
-text.addEventListener('click', () => {
-    textinput.appendChild(popup);
-    popup.classList.add('popup-appear');
-    if(english)
-        popup.children[0].innerHTML = 'Enter a valid message';
+    //Should be using camelCase
+    
+    if(fullnameinputpattern.test(fullnameinput))
+        fullNameValid = true;
     else
-        popup.children[0].innerHTML = 'Unesite validnu poruku';
-});
-
-text.addEventListener('blur', () => {
-    popup.classList.remove('popup-appear');
-});
+    {
+        nameerror.classList.add('error-appear');
+        setTimeout(() => {
+            nameerror.classList.remove('error-appear');
+        }, 2500);
+    }
+    if(emailinputpattern.test(emailinput))
+        emailValid = true;
+    else
+    {
+        emailerror.classList.add('error-appear');
+        setTimeout(() => {
+            emailerror.classList.remove('error-appear');
+        }, 2500);
+    }
+    if(messageinputpattern.test(messageinput))
+        messageValid = true;
+    else
+    {
+        messageerror.classList.add('error-appear');
+        setTimeout(() => {
+            messageerror.classList.remove('error-appear');
+        }, 2500);
+    }
+    if(fullNameValid && emailValid && messageValid)
+    {
+        successText.classList.add('success-appear');
+        setTimeout(() => {
+            successText.classList.remove('error-appear');
+        }, 2500);
+    }
+}
 
 window.addEventListener('load', () => {
     scroll(0,0);

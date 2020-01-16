@@ -31,7 +31,7 @@ let messageinput = document.getElementById('messageinput');
 
 //Regex patterns
 const fullnameinputpattern = /^[A-Z]{1}[a-z]{1,}\s{1}[A-Z]{1}[a-z]{1,}$/;
-const emailinputpattern = /^(\d{1,5}|[^\w\s]{1,3}|[a-zA-Z]+)([a-z]){1,}([!#$%^&*()<>_?:"}{\[\]a-z]){1,}@([a-zA-Z.]){1,}\.([a-z]){1,}$/;
+const emailinputpattern = /^(\d{1,5}|[^\W]{1,3}|[a-zA-Z]+)([a-z]){1,}([!#$%^&*()<>_?:"}{\[\]a-z]){1,}@([a-zA-Z.]){1,}\.([a-z]){1,}$/;
 const messageinputpattern = /^([a-zA-Z0-9.]{1,255})$/;
 
 //Erros

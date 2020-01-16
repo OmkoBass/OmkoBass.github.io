@@ -31,7 +31,7 @@ let messageinput = document.getElementById('messageinput');
 
 //Regex patterns
 const fullnameinputpattern = /^[A-Z]{1}[a-z]{1,}\s{1}[A-Z]{1}[a-z]{1,}$/;
-const emailinputpattern = /^$/;
+const emailinputpattern = /^(\d{1,5}|[^\w\s]{1,3}|[a-zA-Z]+)([a-z]){1,}([!#$%^&*()<>_?:"}{\[\]a-z]){1,}@([a-zA-Z.]){1,}\.([a-z]){1,}$/;
 const messageinputpattern = /^([a-zA-Z0-9.]{1,255})$/;
 
 //Erros
@@ -40,7 +40,7 @@ let emailerror = document.getElementById('emailerror');
 let messageerror = document.getElementById('messageerror');
 
 //Success
-let successText = document.getElementById('successtext');
+let successtext = document.getElementById('successtext');
 
 let english = true;
 
@@ -92,15 +92,19 @@ function changeLanguage()
         desc3.innerHTML = `Everything that we do, we do for two reason. To improve out quality of life and make things easier for us. Without engineering we would never reach the luxuries we have today. <br>
         Stuff today the we view as "Nothing special" a man 100 years before us would thing it's magic.`;
         contactus.innerHTML ='Contact us!';
-        yourfullname.innerHTML = 'Your full name:';
+        messageinput.placeholder = 'Love the site!';
         youremail.innerHTML = 'Your email:';
         yourmessage.innerHTML = 'Your message:';
+        yourfullname.innerHTML = 'Your full name:';
+        fullnameinput.placeholder = 'Jack Walker';
+        emailinput.placeholder = 'someone@example.com'
         send.innerHTML = 'Send';
         //errors
         nameerror.innerHTML = 'Bad name.';
         emailerror.innerHTML = 'Bad email.';
         messageerror.innerHTML = 'Bad message.';
-        successText = 'Success!';
+        successtext.innerHTML = 'Success!';
+
         english = false;
     }
     else
@@ -121,6 +125,9 @@ function changeLanguage()
         desc3.innerHTML = `Sve to radimo iz dva razloga. Da nam poboljša kvalitet života i učini stvari lakšim. Bez inženjerstva nikad ne bi smo došli do luksuza koje imamo danas.<br>   
         Današnje stvari koje gledamo kao "Ništa posebno" bi čoveku pre 100 godina bile prava magija.`;
         contactus.innerHTML ='Kontaktirajte nas!';
+        fullnameinput.placeholder = 'Neko Nekić';
+        emailinput.placeholder = 'neko@primer.com'
+        messageinput.placeholder = 'Sviđa mi se sajt!';
         yourfullname.innerHTML = 'Vaše puno ime:';
         youremail.innerHTML = 'Vaš e-mail:';
         yourmessage.innerHTML = 'Vaša poruka:';
@@ -129,7 +136,8 @@ function changeLanguage()
         nameerror.innerHTML = 'Loše ime.';
         emailerror.innerHTML = 'Loš email.';
         messageerror.innerHTML = 'Loša poruka.';
-        successText = 'Uspešno!';
+        successtext.innerHTML = 'Uspešno!';
+
         english = true;
     }
 }
@@ -190,7 +198,7 @@ function validate()
 
     //Should be using camelCase
     
-    if(fullnameinputpattern.test(fullnameinput))
+    if(fullnameinputpattern.test(fullnameinput.value))
         fullNameValid = true;
     else
     {
@@ -199,7 +207,7 @@ function validate()
             nameerror.classList.remove('error-appear');
         }, 2500);
     }
-    if(emailinputpattern.test(emailinput))
+    if(emailinputpattern.test(emailinput.value))
         emailValid = true;
     else
     {
@@ -208,7 +216,7 @@ function validate()
             emailerror.classList.remove('error-appear');
         }, 2500);
     }
-    if(messageinputpattern.test(messageinput))
+    if(messageinputpattern.test(messageinput.value))
         messageValid = true;
     else
     {
@@ -219,9 +227,13 @@ function validate()
     }
     if(fullNameValid && emailValid && messageValid)
     {
-        successText.classList.add('success-appear');
+        fullnameinput.value = '';
+        emailinput.value = '';
+        messageinput.value = '';
+
+        successtext.classList.add('success-appear');
         setTimeout(() => {
-            successText.classList.remove('error-appear');
+            successtext.classList.remove('success-appear');
         }, 2500);
     }
 }
